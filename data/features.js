@@ -2,33 +2,33 @@ export const features = [
   {
     id: 1,
     iconClass: "tf-icon icon-farming",
-    title: "Landscaping",
+    title: "Professional Counseling",
     description:
-      "Lorem ipsum dolor sit amet, conset etur sadipscing elitr, sed diam noket numy eirmod tempor",
+      "Licensed mental health professionals providing evidence-based therapy and counseling services for individuals and families",
     animation: "fadeInUp",
   },
   {
     id: 2,
     iconClass: "tf-icon icon-hand-gloves",
-    title: "Pruning plants",
+    title: "24/7 Crisis Support",
     description:
-      "Lorem ipsum dolor sit amet, conset etur sadipscing elitr, sed diam noket numy eirmod tempor",
+      "Round-the-clock crisis intervention services providing immediate support during mental health emergencies",
     animation: "fadeInUp",
   },
   {
     id: 3,
     iconClass: "tf-icon icon-fruit-box",
-    title: "Lawn Maintenance",
+    title: "Corporate Training",
     description:
-      "Lorem ipsum dolor sit amet, conset etur sadipscing elitr, sed diam noket numy eirmod tempor",
+      "Comprehensive workplace mental health programs designed to improve employee wellbeing and productivity",
     animation: "fadeInUp",
   },
   {
     id: 4,
     iconClass: "tf-icon icon-seed",
-    title: "Irrigation & Drainage",
+    title: "Community Education",
     description:
-      "Lorem ipsum dolor sit amet, conset etur sadipscing elitr, sed diam noket numy eirmod tempor",
+      "Mental health awareness programs and workshops to reduce stigma and promote understanding throughout Vietnam",
     animation: "fadeInUp",
   },
 ];
@@ -38,32 +38,32 @@ export const featuresData = [
     id: 1,
     iconClass: "icon-farming",
     iconNumber: "01",
-    title: "Set Design Target",
+    title: "Assessment & Planning",
     description:
-      "Lorem Ipsum is simply dummy text of free available market typesetting industry has been the",
+      "Comprehensive mental health assessment and personalized treatment planning tailored to individual needs and recovery goals",
   },
   {
     id: 2,
     iconClass: "icon-seeding1",
     iconNumber: "02",
-    title: "Friendly Service",
+    title: "Compassionate Care",
     description:
-      "Lorem Ipsum is simply dummy text of free available market typesetting industry has been the",
+      "Culturally sensitive and empathetic mental health services provided by experienced Vietnamese mental health professionals",
   },
   {
     id: 3,
     iconClass: "icon-seed",
     iconNumber: "03",
-    title: "Genaret Uniq Idea",
+    title: "Evidence-Based Treatment",
     description:
-      "Lorem Ipsum is simply dummy text of free available market typesetting industry has been the",
+      "Utilizing proven therapeutic approaches and modern mental health interventions to ensure effective treatment outcomes",
   },
   {
     id: 4,
     iconClass: "icon-greenhouse1",
     iconNumber: "04",
-    title: "Finished Work",
+    title: "Ongoing Support",
     description:
-      "Lorem Ipsum is simply dummy text of free available market typesetting industry has been the",
+      "Continuous follow-up care and support services to maintain mental health progress and prevent relapse",
   },
 ];

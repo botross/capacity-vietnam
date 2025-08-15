@@ -59,9 +59,15 @@ export default function RootLayout({ children }) {
     });
     wow.init();
   }, [pathname]);
+   const metadata = {
+    title: "Capacity Vietnam",
+    description: "Building awareness of mental health issues Supporting people recovering from mental illness by providing counseling and mental health training for individuals, families, and companies",
+  };
   return (
     <html lang="en">
       <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
         <link
           href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
           rel="stylesheet"

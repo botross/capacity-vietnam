@@ -4,9 +4,9 @@ export const services = [
     className: "hover-up-style2 fadeInDown",
     iconClass: "icon-icon-farming-layer",
     iconPaths: 5,
-    title: "Landscaping",
+    title: "Individual Counseling",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,",
+      "Professional one-on-one therapy sessions to help individuals overcome mental health challenges and develop coping strategies for a healthier life.",
     linkStyle: "link-style2",
   },
   {
@@ -14,9 +14,9 @@ export const services = [
     className: "fadeInUp",
     iconClass: "icon-Group-7527",
     iconPaths: 3,
-    title: "Pruning plants",
+    title: "Family Therapy",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,",
+      "Comprehensive family counseling services to strengthen relationships, improve communication, and support family members through mental health challenges.",
     linkStyle: "link-style3",
     textColor: "white",
   },
@@ -25,9 +25,9 @@ export const services = [
     className: "hover-up-style2 fadeInLeft",
     iconClass: "icon-Group-7526",
     iconPaths: 6,
-    title: "Irrigation & Drainage",
+    title: "Corporate Training",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,",
+      "Mental health awareness and training programs for companies to create supportive work environments and improve employee wellbeing.",
     linkStyle: "link-style2",
   },
   {
@@ -35,9 +35,9 @@ export const services = [
     className: "hover-up-style2 fadeInRight",
     iconClass: "icon-Group-7528",
     iconPaths: 3,
-    title: "Garden Maintenance",
+    title: "Mental Health Education",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,",
+      "Community outreach and educational programs to raise awareness about mental health issues and reduce stigma in Vietnamese society.",
     linkStyle: "link-style2",
   },
 ];
@@ -48,36 +48,36 @@ export const services2 = [
     animation: "fadeInLeft",
     imageSrc: "/images/why-choose-us/artical-post-1.jpg",
     iconClass: "tf-icon icon-fruit-box",
-    title: "Landscaping",
+    title: "Individual Counseling",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "One-on-one therapy sessions with licensed mental health professionals to address personal challenges",
   },
   {
     id: 2,
     animation: "fadeInUp",
     imageSrc: "/images/why-choose-us/artical-post-2.jpg",
     iconClass: "tf-icon icon2 icon-hanging-bot",
-    title: "Pruning plants",
+    title: "Group Therapy",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Supportive group sessions where individuals share experiences and learn from others facing similar challenges",
   },
   {
     id: 3,
     animation: "fadeInRight",
     imageSrc: "/images/why-choose-us/artical-post-3.jpg",
     iconClass: "tf-icon icon3 icon-spray",
-    title: "Lawn Maintenance",
+    title: "Corporate Wellness",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Workplace mental health programs designed to improve employee wellbeing and productivity",
   },
 ];
 
 export const services3 = [
   {
     id: 1,
-    title: "Landscaping",
+    title: "Individual Counseling",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Professional therapy sessions tailored to address personal mental health challenges and recovery goals",
     iconClass: "tf-icon-service icon-icon-farming-layer",
     paths: 5, // Number of path elements
     spacerMobile: 30,
@@ -85,9 +85,9 @@ export const services3 = [
   },
   {
     id: 2,
-    title: "Pruning plants",
+    title: "Family Support",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Comprehensive family therapy and counseling services to strengthen relationships and communication",
     iconClass: "tf-icon-service icon-box2 icon-Group-7527",
     paths: 3,
     spacerMobile: 30,
@@ -95,9 +95,9 @@ export const services3 = [
   },
   {
     id: 3,
-    title: "Lawn Maintenance",
+    title: "Corporate Training",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Mental health awareness and training programs for organizations to support employee wellbeing",
     iconClass: "tf-icon-service icon-box3 icon-Group-7526",
     paths: 6,
     spacerMobile: 60,
@@ -105,9 +105,9 @@ export const services3 = [
   },
   {
     id: 4,
-    title: "Irrigation & Drainage",
+    title: "Community Outreach",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Educational programs and workshops to build mental health awareness throughout Vietnam",
     iconClass: "tf-icon-service icon-box4 icon-Group-7528",
     paths: 3,
     spacerMobile: 60,
@@ -119,54 +119,54 @@ export const serviceItems = [
   {
     id: 1,
     imageSrc: "/images/why-choose-us/artical-post-1.jpg",
-    title: "Landscaping",
+    title: "Individual Counseling",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Personalized therapy sessions with experienced mental health professionals for individual recovery",
     icon: "tf-icon icon-fruit-box",
     animation: "fadeInLeft",
   },
   {
     id: 2,
     imageSrc: "/images/why-choose-us/artical-post-2.jpg",
-    title: "Pruning plants",
+    title: "Group Therapy",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Supportive group sessions where participants share experiences and learn coping strategies together",
     icon: "tf-icon icon2 icon-hanging-bot",
     animation: "fadeInUp",
   },
   {
     id: 3,
     imageSrc: "/images/why-choose-us/artical-post-3.jpg",
-    title: "Lawn Maintenance",
+    title: "Family Counseling",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Comprehensive family therapy to improve communication and support family members through challenges",
     icon: "tf-icon icon3 icon-spray",
     animation: "fadeInRight",
   },
   {
     id: 4,
     imageSrc: "/images/why-choose-us/artical-post-1.jpg",
-    title: "Landscaping",
+    title: "Corporate Programs",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Mental health training and awareness programs designed for workplace environments",
     icon: "tf-icon icon-fruit-box",
     animation: "fadeInLeft",
   },
   {
     id: 5,
     imageSrc: "/images/why-choose-us/artical-post-2.jpg",
-    title: "Pruning plants",
+    title: "Crisis Intervention",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Immediate support and intervention services for individuals experiencing mental health crises",
     icon: "tf-icon icon2 icon-hanging-bot",
     animation: "fadeInUp",
   },
   {
     id: 6,
     imageSrc: "/images/why-choose-us/artical-post-3.jpg",
-    title: "Lawn Maintenance",
+    title: "Community Education",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at est id leo",
+      "Public awareness campaigns and educational workshops to reduce mental health stigma",
     icon: "tf-icon icon3 icon-spray",
     animation: "fadeInRight",
   },
