@@ -3,16 +3,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import Link from "next/link";
 import Image from "next/image";
+// Since 2018, CapacityVietnam social enterprise has been committed to bringing hope and healing to those facing significant life challenges. With increasing resources and growing community awareness, we can provide better support for people recovering from mental health issues and transform their lives for the better.
 const slides = [
   {
-    title: "MARKETS & RESOURCES",
+    title: "Capacity Vietnam",
     subtitle:
-      "Planting a garden is<br class='sm-d-none'/> similar to believe in<br/> tomorrow",
+      "CapacityVietnam social enterprise has been committed to bringing hope and healing to those facing significant life challenges",
     imgSrc: "/images/home/young-woman-with-their-garden-crops.png",
   },
   {
-    title: "MARKETS & RESOURCES",
-    subtitle: "Grow your health<br class='sm-d-none'/> grow a garden",
+    title: "Capacity Vietnam",
+    subtitle:
+      "we can provide better support for people recovering from mental health issues and transform their lives for the better.",
     imgSrc: "/images/home/young-woman-with-their-garden-crops.png",
   },
 ];

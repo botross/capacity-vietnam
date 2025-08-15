@@ -12,8 +12,8 @@ import Services from "@/components/homes/home-1/Services";
 import Team from "@/components/homes/home-1/Team";
 import Testimonials from "@/components/homes/home-1/Testimonials";
 export const metadata = {
-  title: "Home || Gettree - Garden & Landscaping React Nextjs Template",
-  description: "Gettree - Garden & Landscaping React Nextjs Template",
+  title: "Capacity Vietnam",
+  description: "Building awareness of mental health issues Supporting people recovering from mental illness by providing counseling and mental health training for individuals, families, and companies",
 };
 export default function Home() {
   return (

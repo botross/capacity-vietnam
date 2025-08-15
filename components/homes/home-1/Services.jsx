@@ -11,7 +11,7 @@ export default function Services() {
               <h2 className="section-title">
                 What You Can Do
                 <br />
-                with Gettree
+                with Capacity Vietnam
               </h2>
             </div>
           </div>

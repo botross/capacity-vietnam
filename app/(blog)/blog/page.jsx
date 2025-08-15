@@ -5,10 +5,7 @@ import Topbar from "@/components/headers/Topbar";
 import Blog from "@/components/otherPages/Blog";
 
 import React from "react";
-export const metadata = {
-  title: "Blog || Gettree - Garden & Landscaping React Nextjs Template",
-  description: "Gettree - Garden & Landscaping React Nextjs Template",
-};
+
 export default function page() {
   return (
     <>

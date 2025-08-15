@@ -107,9 +107,9 @@ export default function Contact() {
                       id="services"
                     >
                       <option value={0}>Choose services</option>
-                      <option value={1}>Gettree</option>
-                      <option value={2}>Gettree</option>
-                      <option value={3}>Gettree</option>
+                      <option value={1}>Capacity Vietnam</option>
+                      <option value={2}>Capacity Vietnam</option>
+                      <option value={3}>Capacity Vietnam</option>
                     </select>
                   </div>
                 </div>

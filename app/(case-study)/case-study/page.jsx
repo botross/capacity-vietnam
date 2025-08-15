@@ -5,10 +5,7 @@ import Topbar from "@/components/headers/Topbar";
 import CaseStudy from "@/components/otherPages/CaseStudy";
 
 import React from "react";
-export const metadata = {
-  title: "Case Studies || Gettree - Garden & Landscaping React Nextjs Template",
-  description: "Gettree - Garden & Landscaping React Nextjs Template",
-};
+
 export default function page() {
   return (
     <>

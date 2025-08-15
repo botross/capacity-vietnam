@@ -11,10 +11,7 @@ import Services2 from "@/components/homes/home-2/Services2";
 import Shop from "@/components/homes/home-2/Shop";
 import Testimonials from "@/components/homes/home-2/Testimonials";
 import React from "react";
-export const metadata = {
-  title: "Home 02 || Gettree - Garden & Landscaping React Nextjs Template",
-  description: "Gettree - Garden & Landscaping React Nextjs Template",
-};
+
 export default function page() {
   return (
     <>
