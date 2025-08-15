@@ -66,7 +66,7 @@ export default function Footer1() {
                       <div className="icon-location" />
                       <div className="content-location">
                         <div className="heading-16px-rubik">
-                          66 broklyant, new York India 3269 road.
+                          66 broklyant, new York 3269 road.
                         </div>
                       </div>
                     </div>
