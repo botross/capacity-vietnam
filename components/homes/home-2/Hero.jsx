@@ -4,13 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 const slides = [
   {
-    title: "MARKETS & RESOURCES",
-    subtitle: "Grow your health<br/> grow a garden",
+    title: "MENTAL HEALTH SUPPORT",
+    subtitle: "Transform your life<br/> heal your mind",
     imgSrc: "/images/home/slidehome2.png",
   },
   {
-    title: "MARKETS & RESOURCES",
-    subtitle: "Grow your health<br/> grow a garden",
+    title: "CAPACITY VIETNAM",
+    subtitle: "Building awareness<br/> supporting recovery",
     imgSrc: "/images/home/slidehome2.png",
   },
 ];
@@ -87,17 +87,14 @@ export default function Hero() {
             <div className="col-md-12">
               <div className="features-home2-box wow fadeInUp">
                 <div className="features-left link-style2">
-                  <h2 className="title-main">A step towards less pollution</h2>
+                  <h2 className="title-main">A step towards better mental health</h2>
                   <a href="#" className="title-main heading2">
                     (643)911-1633
                   </a>
                 </div>
                 <div className="features-right">
                   <p className="section-desc">
-                    The quick, brown fox jumps over a lazy dog. DJs flock by
-                    when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.
-                    Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for
-                    quick jigs vex!
+                    Capacity Vietnam provides comprehensive mental health services including individual counseling, family therapy, corporate wellness programs, and community education. We're committed to supporting people recovering from mental illness and building awareness throughout Vietnam.
                   </p>
                 </div>
               </div>

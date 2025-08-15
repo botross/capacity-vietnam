@@ -1,4 +1,4 @@
-import Footer2 from "@/components/footers/Footer2";
+import Footer1 from "@/components/footers/Footer1";
 import Header2 from "@/components/headers/Header2";
 import Topbar from "@/components/headers/Topbar";
 import About from "@/components/homes/home-2/About";
@@ -27,7 +27,7 @@ export default function page() {
         <Portfolio />
         <Testimonials />
         <Blogs />
-        <Footer2 />
+        <Footer1 />
       </div>
     </>
   );

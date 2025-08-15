@@ -24,21 +24,19 @@ export default function About() {
                 />
                 <div className="about-content-left themesflat-counter">
                   <h5 className="section-subtitle">ABOUT US</h5>
-                  <h2 className="section-title">Nurture The environment</h2>
+                  <h2 className="section-title">Supporting Mental Wellness</h2>
                   <p className="section-desc">
-                    Lorem Ipsum is simply dummy text of free available market
-                    typesetting industry has been the industry's standard dummy
+                    Capacity Vietnam is dedicated to providing comprehensive mental health support and building awareness throughout Vietnamese communities
                   </p>
                   <div className="about-history-box wow fadeInLeft">
                     <div className="icon-about">
                       <span className="tf-icon-about icon-admin-sys" />
                       <div className="about-count-year section-heading-jost-size20 fw-600">
-                        25 YEARS
+                        8+ YEARS
                       </div>
                     </div>
                     <p className="section-desc about-box-right">
-                      Lorem Ipsum is simply dummy text of free available market
-                      type setting industry
+                      Supporting mental health recovery and building awareness in Vietnam
                     </p>
                   </div>
                 </div>
@@ -56,11 +54,10 @@ export default function About() {
                       <span className="icon-about-right" />
                       <div className="content-features">
                         <h3 className="section-heading-jost-size20 fw-600">
-                          Ligula molestie
+                          Individual Counseling
                         </h3>
                         <p className="section-desc white">
-                          Dolor sit amet onsectetur adipisicing elit, sed do
-                          eiusmod tempor incididunt
+                          Professional one-on-one therapy sessions for personal mental health recovery
                         </p>
                       </div>
                     </div>
@@ -68,11 +65,10 @@ export default function About() {
                       <span className="icon-about-right" />
                       <div className="content-features">
                         <h3 className="section-heading-jost-size20 fw-600">
-                          Magna vivamus
+                          Family Therapy
                         </h3>
                         <p className="section-desc white">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod
+                          Supporting families through mental health challenges and strengthening relationships
                         </p>
                       </div>
                     </div>
@@ -80,11 +76,10 @@ export default function About() {
                       <span className="icon-about-right" />
                       <div className="content-features">
                         <h3 className="section-heading-jost-size20 fw-600">
-                          Efficitur velit
+                          Corporate Training
                         </h3>
                         <p className="section-desc white">
-                          Consectetur adipisicing elised do eiusmod tempor
-                          incididunt ut labore
+                          Mental health awareness and wellness programs for workplace environments
                         </p>
                       </div>
                     </div>

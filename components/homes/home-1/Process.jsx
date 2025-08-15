@@ -15,11 +15,11 @@ export default function Process() {
           </div>
           <div className="col-md-12">
             <div className="section-title-box">
-              <h4 className="section-subtitle wow fadeInUp">WORK PROCESS</h4>
+              <h4 className="section-subtitle wow fadeInUp">OUR APPROACH</h4>
               <h2 className="section-title wow fadeInUp">
-                We Complete Every
+                Mental Health Recovery
                 <br />
-                Step Carefully
+                Journey Process
               </h2>
             </div>
             <div
@@ -43,11 +43,10 @@ export default function Process() {
               </div>
               <div className="content-features">
                 <h3 className="section-heading-jost-size20 text-pri2-color">
-                  Set Design Target
+                  Initial Assessment
                 </h3>
                 <p className="section-desc">
-                  Lorem Ipsum is simply dummy text of free available market
-                  typesetting industry has been the
+                  Comprehensive evaluation of mental health needs and development of personalized treatment goals
                 </p>
               </div>
             </div>
@@ -60,11 +59,10 @@ export default function Process() {
               </div>
               <div className="content-features cf-3">
                 <h3 className="section-heading-jost-size20 text-pri2-color">
-                  Genaret Uniq Idea
+                  Skill Development
                 </h3>
                 <p className="section-desc">
-                  Lorem Ipsum is simply dummy text of free available market
-                  typesetting industry has been the
+                  Learning coping strategies and building resilience tools for long-term mental health management
                 </p>
               </div>
             </div>
@@ -79,11 +77,10 @@ export default function Process() {
               </div>
               <div className="content-features cf-2 text-pri2-color">
                 <h3 className="section-heading-jost-size20">
-                  Friendly Service
+                  Therapy Sessions
                 </h3>
                 <p className="section-desc">
-                  Lorem Ipsum is simply dummy text of free available market
-                  typesetting industry has been the
+                  Regular counseling sessions with licensed professionals using evidence-based therapeutic approaches
                 </p>
               </div>
             </div>
@@ -96,11 +93,10 @@ export default function Process() {
               </div>
               <div className="content-features cf-4">
                 <h3 className="section-heading-jost-size20 text-pri2-color">
-                  Finished Work
+                  Ongoing Support
                 </h3>
                 <p className="section-desc">
-                  Lorem Ipsum is simply dummy text of free available market
-                  typesetting industry has been the
+                  Continued follow-up care and support to maintain progress and prevent mental health relapses
                 </p>
               </div>
             </div>

@@ -38,7 +38,7 @@ export default function About() {
                       <Counter max={20} />
                     </span>
                     <div className="caption-number-count">
-                      Years Of experience
+                      Years Supporting Mental Health
                     </div>
                   </div>
                 </div>
@@ -50,12 +50,10 @@ export default function About() {
               <div className="about-content-title wow fadeInUp">
                 <div className="section-subtitle">ABOUT US</div>
                 <div className="section-title">
-                  The Best Choice For your Business.
+                  Your Mental Health Partner in Vietnam
                 </div>
                 <div className="section-desc">
-                  Lorem Ipsum is simply dummy text of free available market
-                  typesetting industry has been the industry's standard dummy
-                  text ever. Lorem Ipsum is simply dummy text of free available
+                  Capacity Vietnam is a social enterprise committed to bringing hope and healing to those facing mental health challenges. We provide professional counseling, family therapy, and corporate wellness programs to transform lives throughout Vietnam.
                 </div>
               </div>
               <div id="about-box" className="about-desc-box">
@@ -65,10 +63,10 @@ export default function About() {
                     <div className="inner-box">
                       <Link href={`/services`}>
                         <h3 className="section-heading-jost-size20 item-1">
-                          Best Ui Designer
+                          Licensed Professionals
                         </h3>
                       </Link>
-                      <p className="section-desc">Lorem Ipsum is simply</p>
+                      <p className="section-desc">Expert mental health care</p>
                     </div>
                   </div>
                   <div className="about-box-nd1 wow fadeInLeft">
@@ -76,10 +74,10 @@ export default function About() {
                     <div className="inner-box">
                       <Link href={`/services`}>
                         <h3 className="section-heading-jost-size20 item-2">
-                          Counter In Work.
+                          24/7 Support Available
                         </h3>
                       </Link>
-                      <p className="section-desc">Lorem Ipsum is simply</p>
+                      <p className="section-desc">Always here to help</p>
                     </div>
                   </div>
                 </div>

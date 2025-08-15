@@ -35,12 +35,10 @@ export default function Services() {
               </span>
               <div className="content-features">
                 <Link href={`/service-details`}>
-                  <h3 className="section-heading-jost-size22">Landscaping</h3>
+                  <h3 className="section-heading-jost-size22">Individual Counseling</h3>
                 </Link>
                 <p className="section-desc">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat,
+                  Professional one-on-one therapy sessions with licensed mental health counselors to address personal challenges and support recovery goals.
                 </p>
                 <div className="link2 link-style2">
                   <Link href={`/service-details`} className="read-more">
@@ -61,13 +59,12 @@ export default function Services() {
               <div className="content-features link-style3">
                 <Link href={`/service-details`}>
                   <h3 className="section-heading-jost-size22">
-                    Pruning plants
+                    Family Therapy
                   </h3>
                 </Link>
                 <p className="section-desc white">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat,
+                  Comprehensive mental health support services designed to help individuals
+                  and families through professional counseling and therapy services.
                 </p>
                 <div className="link2 link-style3">
                   <Link href={`/service-details`} className="read-more">
@@ -95,9 +92,8 @@ export default function Services() {
                   </h3>
                 </Link>
                 <p className="section-desc">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat,
+                  Comprehensive mental health support services designed to help individuals
+                  and families through professional counseling and therapy services.
                 </p>
                 <div className="link2 link-style2">
                   <Link href={`/service-details`} className="read-more">
@@ -118,13 +114,12 @@ export default function Services() {
               <div className="content-features">
                 <Link href={`/service-details`}>
                   <h3 className="section-heading-jost-size22">
-                    Garden Maintenance
+                    Corporate Training
                   </h3>
                 </Link>
                 <p className="section-desc">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat,
+                  Comprehensive mental health support services designed to help individuals
+                  and families through professional counseling and therapy services.
                 </p>
                 <div className="link2 link-style2">
                   <Link href={`/service-details`} className="read-more">

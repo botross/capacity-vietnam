@@ -111,8 +111,8 @@ export default function Footer1() {
                 <div className="widgets-about padding-top-listfooter">
                   <p className="heading-jost-20px">About Us</p>
                   <p className="text-decs">
-                    Lorem Ipsum simply dummy text available in market the
-                    printing text, MORE...
+                    Capacity Vietnam provides comprehensive mental health services throughout
+                    Vietnam, supporting mental health recovery and awareness.
                   </p>
                   <ul className="widgets-nav-social">
                     <li>

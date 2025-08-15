@@ -9,11 +9,11 @@ export default function Contact() {
             <div className="contact-left">
               <h3 className="section-subtitle mg-bottom-22">GET IN TOUCH</h3>
               <h2 className="section-title mg-bottom-15">
-                We want to share our locationto find us easily.
+                Reach out for mental health support and guidance.
               </h2>
               <p className="section-desc mg-bottom-60">
-                Lorem ipsum dolor sit amet, conset etur sadipscing elitr, sed
-                diam noket numy eirmod tempor
+                Contact Capacity Vietnam for professional mental health support and counseling services
+throughout Vietnam. We're here to help.
               </p>
               <div className="address-box mg-bottom30">
                 <div className="contact-location icon-map" />

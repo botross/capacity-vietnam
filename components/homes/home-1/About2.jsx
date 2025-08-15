@@ -24,13 +24,10 @@ export default function About2() {
             <div className="content-right link-style3">
               <h4 className="section-subtitle white wow fadeInUp">ABOUT US</h4>
               <h3 className="section-title white wow fadeInUp">
-                We Have The Perfect soluion For You
+                Comprehensive Mental Health Solutions
               </h3>
               <p className="section-desc white wow fadeInUp">
-                Lorem Ipsum is simply dummy text of free available in market the
-                typesetting industry has been the industry's standard dummy text
-                ever. Lorem Ipsum is simply dummy text of free available in
-                market the printing
+                At Capacity Vietnam, we provide comprehensive mental health services including individual counseling, family therapy, corporate wellness programs, and community education. Our mission is to transform lives and build awareness of mental health throughout Vietnam.
               </p>
               <div className="box">
                 <div className="about-box wow fadeInLeft">
@@ -45,26 +42,26 @@ export default function About2() {
                         href={`/services`}
                         className="section-heading-jost-size20 fw-600"
                       >
-                        Counter In Work.
+                        Individual Counseling
                       </Link>
-                      <p className="section-desc white">Lorem Ipsum is</p>
+                      <p className="section-desc white">Professional therapy sessions</p>
                     </div>
                   </div>
                   <div className="about-box-list">
                     <ul className="list-box">
                       <li>
                         <Link href={`/service-details`}>
-                          available in market the printing
+                          Depression & Anxiety Treatment
                         </Link>
                       </li>
                       <li>
                         <Link href={`/service-details`}>
-                          Lorem Ipsum simply dummy
+                          Crisis Intervention Services
                         </Link>
                       </li>
                       <li>
                         <Link href={`/service-details`}>
-                          market the printing
+                          Mental Health Assessment
                         </Link>
                       </li>
                     </ul>
@@ -82,26 +79,26 @@ export default function About2() {
                         href={`/services`}
                         className="section-heading-jost-size20 fw-600"
                       >
-                        Counter In Work.
+                        Family Support
                       </Link>
-                      <p className="section-desc white">Lorem Ipsum is</p>
+                      <p className="section-desc white">Strengthening family bonds</p>
                     </div>
                   </div>
                   <div className="about-box-list2">
                     <ul className="list-box">
                       <li>
                         <Link href={`/service-details`}>
-                          market the printing typesetting
+                          Corporate Wellness Training
                         </Link>
                       </li>
                       <li>
                         <Link href={`/service-details`}>
-                          available in market the printing
+                          Group Therapy Sessions
                         </Link>
                       </li>
                       <li>
                         <Link href={`/service-details`}>
-                          Lorem Ipsum simply free
+                          Community Education Programs
                         </Link>
                       </li>
                     </ul>
@@ -121,7 +118,7 @@ export default function About2() {
                 <div className="inner-subcribe-box">
                   <div className="col-md-5">
                     <h2 className="heading-subcribe">
-                      Get notified about the event! Subscribe today
+                      Stay updated on mental health resources! Subscribe today
                     </h2>
                   </div>
                   <div className="col-md-7">
