@@ -42,7 +42,11 @@ export default function Footer1() {
     }
   };
   return (
-    <footer className="footer">
+    <footer 
+    style={{
+      paddingBottom: "100px",
+    }}
+    className="footer">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
