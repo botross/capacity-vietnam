@@ -225,19 +225,7 @@ export default function Footer1() {
           </div>
         </div>
       </div>
-      <div className="footer-bottom">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="copyright link-style4">
-                <p className="copyright-text">
-                  copyright {new Date().getFullYear()} by themesflat
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </footer>
   );
 }
