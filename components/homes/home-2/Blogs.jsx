@@ -6,7 +6,9 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Blogs() {
   return (
-    <section className="flat-news-home2">
+    <section
+    
+    className="flat-news-home2">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-sm-6">

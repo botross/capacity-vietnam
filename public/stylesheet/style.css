@@ -834,12 +834,14 @@ a:focus {
 ---------------------------------------------------------------*/
 :root {
   /* color */
-  --primary-color: #348e38 !important;
-  --primary-color2: #0f4229 !important;
-  --primary-color3: #e8f5e9 !important;
-  --primary-color4: #525368 !important;
-  --primary-color5: #181818 !important;
+  --primary-color: #2C4F73 !important;   /* Deep Slate Blue */
+  --primary-color2: #3A6C99 !important;  /* Softer steel blue accent */
+  --primary-color3: #E3EEF6 !important;  /* Very light blue background */
+  --primary-color4: #4B5563 !important;  /* Neutral dark gray (for text/secondary) */
+  --primary-color5: #1F2937 !important;  /* Darker charcoal */
 }
+
+
 
 /* button */
 
@@ -861,7 +863,7 @@ a:focus {
 
 .button > .btn {
   color: var(--primary-color2);
-  border: solid 2px #bbd0c2;
+  border: solid 2px var(--primary-color2);
 }
 
 .button > .btn:hover,
@@ -952,7 +954,7 @@ a:focus {
 .section-heading-jost-size34,
 .section-heading-jost-size46 {
   font-family: "Rubik", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
@@ -1081,6 +1083,9 @@ header.fixed-header {
   width: 100%;
   z-index: 999;
   box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 20%);
+}
+.height{
+  margin-top: -120px !important;
 }
 
 /* effect hover */

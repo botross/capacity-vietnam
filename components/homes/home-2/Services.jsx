@@ -26,9 +26,12 @@ export default function Services() {
             />
           </div>
         </div>
-        <div className="row">
+        <div 
+
+        className="row row-gap-5">
           {services2.map((service) => (
             <div
+              style={{ borderRadius: "12px" }}
               className={`item-three-column mg-bottom-20 wow ${service.animation}`}
               key={service.id}
             >

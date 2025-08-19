@@ -207,23 +207,23 @@
     letter-spacing: 1px !important;
 }
 #rev-slider2 h3 {
-    color: #348e38;
+    color: var(--primary-color);
 }
 #rev-slider2 h1 {
-    color: #0f4229;
+    color: var(--primary-color);
 }
 #rev-slider2 .btn-left,
 #rev-slider1 .btn-left {
     margin-right: 28px;
-    background-color: #348e38;
-    border: solid 2px #348e38;
+    background-color: var(--primary-color);
+    border: solid 2px var(--primary-color);
     color: #ffff;
 }
 #rev-slider2 .btn-left:hover,
 #rev-slider1 .btn-left:hover {
     background-color: #0f422900;
-    border: solid 2px #348e38;
-    color: #348e38;
+    border: solid 2px var(--primary-color);
+    color: var(--primary-color);
 }
 #rev-slider2 .button-box {
     display: flex;
@@ -764,7 +764,7 @@
 .flat-testimonials .icon-inner-box::after {
     content: '\f10d';
     font-family: 'FontAwesome';
-    color: #348e38;
+    color: var(--primary-color);
     font-size: 39px;
     padding: 17px 20px 17px 20px;
     background: #ffff;

@@ -30,7 +30,7 @@ export default function Hero() {
               <div className="rev_slider_wrapper fullwidthbanner-container h-100">
                 <div
                   id="rev-slider2"
-                  className="rev_slider fullwidthabanner h-100 relative"
+                  className="rev_slider fullwidthabanner h-100 relative "
                 >
                   <Swiper
                     loop={true}

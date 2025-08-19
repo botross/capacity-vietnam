@@ -8,12 +8,12 @@ import MobileMenuToggle from "./MobileMenuToggle";
 import MobileNav from "./MobileNav";
 export default function Header1() {
   return (
-    <div className="flat-header-box">
+    <div className="flat-header-box mt-5">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <div className="container">
-              <div className="row">
+            {/* <div className="container"> */}
+              {/* <div className="row">
                 <div className="top-header1">
                   <div className="top-header-inner">
                     <div className="top-bar-left">
@@ -52,7 +52,7 @@ export default function Header1() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* header */}
             <header id="header" className="header bg-color">
               <div className="container">

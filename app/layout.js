@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
           mode === "desktop"
             ? el.dataset.desktop
             : mode === "mobile"
-            ? el.dataset.mobile
-            : el.dataset.smobile;
+              ? el.dataset.mobile
+              : el.dataset.smobile;
 
         el.style.height = `${height}px`;
       });
@@ -40,11 +40,14 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const header = document.querySelector("#header.header-style2");
+      const hero = document.querySelector("#rev-slider2")
       if (header) {
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 60) {
           header.classList.add("fixed-header");
+          hero.classList.remove("height")
         } else {
           header.classList.remove("fixed-header");
+          hero.classList.add("height")
         }
       }
     });
@@ -59,7 +62,7 @@ export default function RootLayout({ children }) {
     });
     wow.init();
   }, [pathname]);
-   const metadata = {
+  const metadata = {
     title: "Capacity Vietnam",
     description: "Building awareness of mental health issues Supporting people recovering from mental illness by providing counseling and mental health training for individuals, families, and companies",
   };

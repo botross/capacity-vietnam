@@ -1,5 +1,7 @@
 import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+// import Header1 from "@/components/headers/Header1";
+import Header2 from "@/components/headers/Header2";
+import Topbar from "@/components/headers/Topbar";
 import About from "@/components/homes/home-1/About";
 import About2 from "@/components/homes/home-1/About2";
 import Blogs from "@/components/homes/home-1/Blogs";
@@ -19,7 +21,8 @@ export default function Home() {
   return (
     <>
       <div className="boxed blog">
-        <Header1 />
+        <Topbar />
+        <Header2 />
         <Hero />
         <Features />
         <About />
