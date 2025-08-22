@@ -834,11 +834,12 @@ a:focus {
 ---------------------------------------------------------------*/
 :root {
   /* color */
-  --primary-color: #2C4F73 !important;   /* Deep Slate Blue */
-  --primary-color2: #3A6C99 !important;  /* Softer steel blue accent */
-  --primary-color3: #E3EEF6 !important;  /* Very light blue background */
-  --primary-color4: #4B5563 !important;  /* Neutral dark gray (for text/secondary) */
-  --primary-color5: #1F2937 !important;  /* Darker charcoal */
+  --primary-color: #2D5175 !important;   /* Primary Brand Color - Dark Blue */
+  --primary-color2: #1790B3 !important;  /* Primary Brand Color - Bright Blue */
+  --primary-color3: #E8F4F8 !important;  /* Light background derived from primary */
+  --primary-color4: #5A8B89 !important;  /* Secondary Brand Color - Teal */
+  --primary-color5: #2D5175 !important;  /* Primary Brand Color for headings */
+  --accent-color: #D4A574 !important;    /* Secondary Brand Color - Golden */
 }
 
 

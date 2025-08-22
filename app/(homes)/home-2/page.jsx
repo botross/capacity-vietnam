@@ -10,8 +10,9 @@ import Services from "@/components/homes/home-2/Services";
 import Services2 from "@/components/homes/home-2/Services2";
 import Shop from "@/components/homes/home-2/Shop";
 import Testimonials from "@/components/homes/home-2/Testimonials";
+import Team from "@/components/otherPages/Team";
 import React from "react";
-
+import Services3 from "@/components/homes/home-1/Services";
 export default function page() {
   return (
     <>
@@ -19,14 +20,20 @@ export default function page() {
         <Topbar />
         <Header2 />
         <Hero />
-        <Services />
-        <About />
-        <Services2 />
-        <Shop />
-        <Facts />
-        <Portfolio />
-        <Testimonials />
-        <Blogs />
+        <div className="flat-team">
+          <Team />
+        </div>
+        <div className="flat-why-choose-us">
+          <Services />
+        </div>
+        {/* <Services2 /> */}
+        {/* <Services3 /> */}
+        {/* <About /> */}
+        {/* <Shop /> */}
+        {/* <Facts /> */}
+          <Portfolio />
+        {/* <Testimonials /> */}
+        {/* <Blogs /> */}
         <Footer1 />
       </div>
     </>

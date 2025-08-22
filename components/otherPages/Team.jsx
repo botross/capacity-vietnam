@@ -78,7 +78,7 @@ export default function Team() {
                      <button
                        onClick={() => setSelectedMember(member)}
                        style={{
-                         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                         background: 'linear-gradient(135deg, #2D5175 0%, #1790B3 100%)',
                          border: 'none',
                          color: 'white',
                          padding: '12px 24px',
@@ -87,18 +87,18 @@ export default function Team() {
                          fontWeight: '600',
                          cursor: 'pointer',
                          marginTop: '15px',
-                         boxShadow: '0 8px 25px rgba(102, 126, 234, 0.3)',
+                         boxShadow: '0 8px 25px rgba(45, 81, 117, 0.3)',
                          transition: 'all 0.3s ease',
                          textTransform: 'uppercase',
                          letterSpacing: '1px'
                        }}
                        onMouseOver={(e) => {
                          e.target.style.transform = 'translateY(-2px)';
-                         e.target.style.boxShadow = '0 12px 35px rgba(102, 126, 234, 0.4)';
+                         e.target.style.boxShadow = '0 12px 35px rgba(45, 81, 117, 0.4)';
                        }}
                        onMouseOut={(e) => {
                          e.target.style.transform = 'translateY(0)';
-                         e.target.style.boxShadow = '0 8px 25px rgba(102, 126, 234, 0.3)';
+                         e.target.style.boxShadow = '0 8px 25px rgba(45, 81, 117, 0.3)';
                        }}
                      >
                        Know More
@@ -255,7 +255,7 @@ export default function Team() {
                      <span 
                        key={index}
                        style={{
-                         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                         background: 'linear-gradient(135deg, #2D5175 0%, #1790B3 100%)',
                          color: 'white',
                          padding: '8px 16px',
                          borderRadius: '25px',

@@ -76,7 +76,7 @@ export default function Team() {
                      <button
                        onClick={() => setSelectedMember(member)}
                        style={{
-                         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                         background: 'linear-gradient(135deg, #2D5175 0%, #1790B3 100%)',
                          border: 'none',
                          color: 'white',
                          padding: '12px 24px',
@@ -85,18 +85,18 @@ export default function Team() {
                          fontWeight: '600',
                          cursor: 'pointer',
                          marginTop: '15px',
-                         boxShadow: '0 8px 25px rgba(102, 126, 234, 0.3)',
+                         boxShadow: '0 8px 25px rgba(45, 81, 117, 0.3)',
                          transition: 'all 0.3s ease',
                          textTransform: 'uppercase',
                          letterSpacing: '1px'
                        }}
                        onMouseOver={(e) => {
                          e.target.style.transform = 'translateY(-2px)';
-                         e.target.style.boxShadow = '0 12px 35px rgba(102, 126, 234, 0.4)';
+                         e.target.style.boxShadow = '0 12px 35px rgba(45, 81, 117, 0.4)';
                        }}
                        onMouseOut={(e) => {
                          e.target.style.transform = 'translateY(0)';
-                         e.target.style.boxShadow = '0 8px 25px rgba(102, 126, 234, 0.3)';
+                         e.target.style.boxShadow = '0 8px 25px rgba(45, 81, 117, 0.3)';
                        }}
                      >
                        Know More
@@ -182,8 +182,8 @@ export default function Team() {
                  style={{ borderRadius: '15px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
                />
                <div style={{ flex: 1 }}>
-                 <h2 style={{ color: '#2c3e50', marginBottom: '12px', fontSize: '32px', fontWeight: '600' }}>{selectedMember.name}</h2>
-                 <h3 style={{ color: '#3498db', fontSize: '20px', marginBottom: '8px', fontWeight: '500' }}>{selectedMember.role}</h3>
+                 <h2 style={{ color: '#2D5175', marginBottom: '12px', fontSize: '32px', fontWeight: '600' }}>{selectedMember.name}</h2>
+                 <h3 style={{ color: '#1790B3', fontSize: '20px', marginBottom: '8px', fontWeight: '500' }}>{selectedMember.role}</h3>
                  {selectedMember.title && (
                    <p style={{ color: '#7f8c8d', fontSize: '16px', marginBottom: '20px', fontStyle: 'italic' }}>{selectedMember.title}</p>
                  )}
@@ -202,7 +202,7 @@ export default function Team() {
                    )}
                    {selectedMember.workingHours && (
                      <div style={{ 
-                       background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+                       background: 'linear-gradient(135deg, #5A8B89 0%, #D4A574 100%)',
                        padding: '12px 16px',
                        borderRadius: '10px',
                        color: 'white'
@@ -251,7 +251,7 @@ export default function Team() {
                      <span 
                        key={index}
                        style={{
-                         background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                         background: 'linear-gradient(135deg, #2D5175 0%, #1790B3 100%)',
                          color: 'white',
                          padding: '8px 16px',
                          borderRadius: '25px',

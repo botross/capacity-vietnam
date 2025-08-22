@@ -12,7 +12,7 @@ export default function About2() {
                 <div className="tag-logo">
                   <Image
                     alt="images"
-                    src="/icon/logo-dark.png"
+                    src="/icon/logo.png"
                     width={174}
                     height={58}
                   />

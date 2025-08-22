@@ -17,7 +17,8 @@ const slides = [
 
 export default function Hero() {
   return (
-    <div className="page-title-home2">
+    <div 
+    className="page-title-home2">
       {/* slider */}
       <div className="container h-100">
         <div className="row h-100">
@@ -80,28 +81,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      {/* .slider */}
-      <section className="features-home2">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="features-home2-box wow fadeInUp">
-                <div className="features-left link-style2">
-                  <h2 className="title-main">A step towards better mental health</h2>
-                  <a href="#" className="title-main heading2">
-                    (643)911-1633
-                  </a>
-                </div>
-                <div className="features-right">
-                  <p className="section-desc">
-                    Capacity Vietnam provides comprehensive mental health services including individual counseling, family therapy, corporate wellness programs, and community education. We're committed to supporting people recovering from mental illness and building awareness throughout Vietnam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

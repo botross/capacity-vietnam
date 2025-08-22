@@ -18,9 +18,9 @@ export default function Header2() {
                   <Link href={`/`} title="">
                     <Image
                       alt="images"
-                      src="/icon/logo-dark.png"
-                      width={174}
-                      height={58}
+                      src="/icon/logo.png"
+                      width={135}
+                      height={35}
                     />
                   </Link>
                 </div>
@@ -42,43 +42,9 @@ export default function Header2() {
             <div className="col-md-3">
               <div className="site-header-right">
                 <div className="header-inner">
-                  <div className="search flat-show-search">
-                    <div className="show-search" onClick={toggleSearch}>
-                      <a href="#">
-                        <i className="fa fa-search" />
-                      </a>
-                    </div>
-                    <div className="top-search widgets-input">
-                      <form
-                        action="get"
-                        id="searchform-all"
-                        className="header-search search-form"
-                      >
-                        <div className="input-group">
-                          <input
-                            type="search"
-                            id="s"
-                            className="search-field"
-                            placeholder="Search here"
-                            aria-label="Search"
-                          />
-                          <button
-                            className="search-submit"
-                            type="submit"
-                            title="Search"
-                          />
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div className="cart">
-                    <a href="#" className="cart-btn">
-                      <i className="fa fa-shopping-cart" />
-                    </a>
-                  </div>
                   <div className="button">
                     <Link href={`/contact`} className="btn">
-                      Get A Quote
+                    Contact Us
                     </Link>
                   </div>
                 </div>
