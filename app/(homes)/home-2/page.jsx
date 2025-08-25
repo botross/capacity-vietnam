@@ -5,6 +5,7 @@ import About from "@/components/homes/home-2/About";
 import Blogs from "@/components/homes/home-2/Blogs";
 import Facts from "@/components/homes/home-2/Facts";
 import Hero from "@/components/homes/home-2/Hero";
+import Hero2 from "@/components/homes/home-2/Hero2";
 import Portfolio from "@/components/homes/home-2/Portfolio";
 import Services from "@/components/homes/home-2/Services";
 import Services2 from "@/components/homes/home-2/Services2";
@@ -19,7 +20,8 @@ export default function page() {
       <div className="boxed blog">
         <Topbar />
         <Header2 />
-        <Hero />
+        {/* <Hero /> */}
+        <Hero2 />
         <div className="flat-team">
           <Team />
         </div>

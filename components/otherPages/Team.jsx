@@ -18,7 +18,7 @@ export default function Team() {
                 Meet Our Professional Mental Health Experts
               </h2>
               <p className="section-desc wow fadeInUp">
-                Our dedicated team of licensed professionals is committed to providing compassionate, 
+                Our dedicated team of licensed professionals is committed to providing compassionate,
                 evidence-based mental health support to individuals, families, and organizations throughout Vietnam.
               </p>
             </div>
@@ -65,45 +65,39 @@ export default function Team() {
                     />
                     <a className="icon-top" href="#" />
                   </div>
-                                     <div className="info-staff">
-                     <h3 className="section-heading-rubik-size20 text-pri2-color">
-                       {member.name}
-                     </h3>
-                     <p className="section-desc-2">{member.role}</p>
-                     {member.title && (
-                       <p className="section-desc-2" style={{ fontSize: '14px', opacity: 0.8, marginTop: '5px' }}>
-                         {member.title}
-                       </p>
-                     )}
-                     <button
-                       onClick={() => setSelectedMember(member)}
-                       style={{
-                         background: 'linear-gradient(135deg, #2D5175 0%, #1790B3 100%)',
-                         border: 'none',
-                         color: 'white',
-                         padding: '12px 24px',
-                         borderRadius: '25px',
-                         fontSize: '14px',
-                         fontWeight: '600',
-                         cursor: 'pointer',
-                         marginTop: '15px',
-                         boxShadow: '0 8px 25px rgba(45, 81, 117, 0.3)',
-                         transition: 'all 0.3s ease',
-                         textTransform: 'uppercase',
-                         letterSpacing: '1px'
-                       }}
-                       onMouseOver={(e) => {
-                         e.target.style.transform = 'translateY(-2px)';
-                         e.target.style.boxShadow = '0 12px 35px rgba(45, 81, 117, 0.4)';
-                       }}
-                       onMouseOut={(e) => {
-                         e.target.style.transform = 'translateY(0)';
-                         e.target.style.boxShadow = '0 8px 25px rgba(45, 81, 117, 0.3)';
-                       }}
-                     >
-                       Know More
-                     </button>
-                   </div>
+                  <div className="info-staff">
+                    <h3 className="section-heading-rubik-size20" style={{ color: 'var(--primary-color)' }}>
+                      {member.name}
+                    </h3>
+                    <p 
+                    style={{
+                      color: 'var(--primary-color4)',
+                    }}
+                    className="section-desc-2">{member.role}</p>
+                    {member.title && (
+                      <p className="section-desc-2" style={{ fontSize: '14px', color: 'var(--primary-color4)' }}>
+                        {member.title}
+                      </p>
+                    )}
+                    <button
+                      onClick={() => setSelectedMember(member)}
+                      style={{
+                        background: 'var(--primary-color)',
+                        border: 'none',
+                        color: 'white',
+                        padding: '12px 24px',
+                        borderRadius: '25px',
+                        fontSize: '14px',
+                        fontWeight: '600',
+                        cursor: 'pointer',
+                        marginTop: '15px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px'
+                      }}
+                    >
+                      Know More
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -113,7 +107,7 @@ export default function Team() {
 
       {/* Team Member Modal */}
       {selectedMember && (
-        <div 
+        <div
           className="team-modal-overlay"
           onClick={() => setSelectedMember(null)}
           style={{
@@ -130,237 +124,237 @@ export default function Team() {
             padding: '20px'
           }}
         >
-                     <div 
-             className="team-modal"
-             onClick={(e) => e.stopPropagation()}
-             style={{
-               background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
-               borderRadius: '20px',
-               maxWidth: '900px',
-               width: '100%',
-               maxHeight: '90vh',
-               overflow: 'auto',
-               padding: '40px',
-               boxShadow: '0 25px 50px rgba(0,0,0,0.25)',
-               border: '1px solid rgba(255,255,255,0.2)',
-               backdropFilter: 'blur(10px)'
-             }}
-           >
-                         <div style={{ textAlign: 'right', marginBottom: '20px' }}>
-               <button 
-                 onClick={() => setSelectedMember(null)}
-                 style={{
-                   background: 'linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)',
-                   border: 'none',
-                   fontSize: '20px',
-                   cursor: 'pointer',
-                   color: 'white',
-                   width: '40px',
-                   height: '40px',
-                   borderRadius: '50%',
-                   display: 'flex',
-                   alignItems: 'center',
-                   justifyContent: 'center',
-                   boxShadow: '0 4px 15px rgba(231, 76, 60, 0.3)',
-                   transition: 'all 0.3s ease'
-                 }}
-                 onMouseOver={(e) => {
-                   e.target.style.transform = 'scale(1.1)';
-                 }}
-                 onMouseOut={(e) => {
-                   e.target.style.transform = 'scale(1)';
-                 }}
-               >
-                 ×
-               </button>
-             </div>
-            
-                         <div style={{ display: 'flex', gap: '25px', marginBottom: '35px' }}>
-               <Image
-                 alt={selectedMember.name}
-                 src={selectedMember.imageSrc}
-                 width={200}
-                 height={260}
-                 style={{ borderRadius: '15px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', flexShrink: 0 }}
-               />
-               <div style={{ flex: 1 }}>
-                 <h2 style={{ color: '#2c3e50', marginBottom: '12px', fontSize: '36px', fontWeight: '600' }}>{selectedMember.name}</h2>
-                 <h3 style={{ color: '#3498db', fontSize: '22px', marginBottom: '8px', fontWeight: '500' }}>{selectedMember.role}</h3>
-                 {selectedMember.title && (
-                   <p style={{ color: '#7f8c8d', fontSize: '18px', marginBottom: '20px', fontStyle: 'italic' }}>{selectedMember.title}</p>
-                 )}
-                 
-                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '20px' }}>
-                   {selectedMember.languages && (
-                     <div style={{ 
-                       background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                       padding: '12px 16px',
-                       borderRadius: '10px',
-                       color: 'white'
-                     }}>
-                       <div style={{ fontSize: '12px', opacity: 0.9, marginBottom: '4px' }}>Languages</div>
-                       <div style={{ fontWeight: '500' }}>{selectedMember.languages.join(', ')}</div>
-                     </div>
-                   )}
-                   {selectedMember.workingHours && (
-                     <div style={{ 
-                       background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-                       padding: '12px 16px',
-                       borderRadius: '10px',
-                       color: 'white'
-                     }}>
-                       <div style={{ fontSize: '12px', opacity: 0.9, marginBottom: '4px' }}>Working Hours</div>
-                       <div style={{ fontWeight: '500', fontSize: '14px' }}>{selectedMember.workingHours}</div>
-                     </div>
-                   )}
-                 </div>
-               </div>
-             </div>
+          <div
+            className="team-modal"
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
+              borderRadius: '20px',
+              maxWidth: '900px',
+              width: '100%',
+              maxHeight: '90vh',
+              overflow: 'auto',
+              padding: '40px',
+              boxShadow: '0 25px 50px rgba(0,0,0,0.25)',
+              border: '1px solid rgba(255,255,255,0.2)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
+            <div style={{ textAlign: 'right', marginBottom: '20px' }}>
+              <button
+                onClick={() => setSelectedMember(null)}
+                style={{
+                  background: 'linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)',
+                  border: 'none',
+                  fontSize: '20px',
+                  cursor: 'pointer',
+                  color: 'white',
+                  width: '40px',
+                  height: '40px',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  boxShadow: '0 4px 15px rgba(231, 76, 60, 0.3)',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseOver={(e) => {
+                  e.target.style.transform = 'scale(1.1)';
+                }}
+                onMouseOut={(e) => {
+                  e.target.style.transform = 'scale(1)';
+                }}
+              >
+                ×
+              </button>
+            </div>
 
-             <div style={{ marginBottom: '30px' }}>
-               <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>About Me</h4>
-               <p style={{ lineHeight: '1.8', color: '#34495e', marginBottom: '15px', fontSize: '17px' }}>
-                 {selectedMember.bio || "Professional mental health expert with extensive experience in supporting individuals and families through various challenges."}
-               </p>
-               {selectedMember.detailedBio && (
-                 <p style={{ lineHeight: '1.8', color: '#34495e', fontSize: '17px' }}>{selectedMember.detailedBio}</p>
-               )}
-             </div>
+            <div style={{ display: 'flex', gap: '25px', marginBottom: '35px' }}>
+              <Image
+                alt={selectedMember.name}
+                src={selectedMember.imageSrc}
+                width={200}
+                height={260}
+                style={{ borderRadius: '15px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', flexShrink: 0 }}
+              />
+              <div style={{ flex: 1 }}>
+                <h2 style={{ color: '#2c3e50', marginBottom: '12px', fontSize: '36px', fontWeight: '600' }}>{selectedMember.name}</h2>
+                <h3 style={{ color: '#3498db', fontSize: '22px', marginBottom: '8px', fontWeight: '500' }}>{selectedMember.role}</h3>
+                {selectedMember.title && (
+                  <p style={{ color: '#7f8c8d', fontSize: '18px', marginBottom: '20px', fontStyle: 'italic' }}>{selectedMember.title}</p>
+                )}
 
-             {selectedMember.qualifications && (
-               <div style={{ marginBottom: '30px' }}>
-                 <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Qualifications</h4>
-                 <div style={{ display: 'grid', gap: '10px' }}>
-                   {selectedMember.qualifications.map((qual, index) => (
-                     <div key={index} style={{ 
-                       background: '#f8f9fa',
-                       padding: '12px 16px',
-                       borderRadius: '8px',
-                       borderLeft: '4px solid #3498db',
-                       color: '#2c3e50',
-                       fontWeight: '500'
-                     }}>
-                       {qual}
-                     </div>
-                   ))}
-                 </div>
-               </div>
-             )}
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '20px' }}>
+                  {selectedMember.languages && (
+                    <div style={{
+                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                      padding: '12px 16px',
+                      borderRadius: '10px',
+                      color: 'white'
+                    }}>
+                      <div style={{ fontSize: '12px', opacity: 0.9, marginBottom: '4px' }}>Languages</div>
+                      <div style={{ fontWeight: '500' }}>{selectedMember.languages.join(', ')}</div>
+                    </div>
+                  )}
+                  {selectedMember.workingHours && (
+                    <div style={{
+                      background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+                      padding: '12px 16px',
+                      borderRadius: '10px',
+                      color: 'white'
+                    }}>
+                      <div style={{ fontSize: '12px', opacity: 0.9, marginBottom: '4px' }}>Working Hours</div>
+                      <div style={{ fontWeight: '500', fontSize: '14px' }}>{selectedMember.workingHours}</div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
 
-             {selectedMember.expertise && (
-               <div style={{ marginBottom: '30px' }}>
-                 <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Specialties</h4>
-                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-                   {selectedMember.expertise.map((item, index) => (
-                     <span 
-                       key={index}
-                       style={{
-                         background: 'linear-gradient(135deg, #2D5175 0%, #1790B3 100%)',
-                         color: 'white',
-                         padding: '8px 16px',
-                         borderRadius: '25px',
-                         fontSize: '14px',
-                         fontWeight: '500',
-                         boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
-                       }}
-                     >
-                       {item}
-                     </span>
-                   ))}
-                 </div>
-               </div>
-             )}
+            <div style={{ marginBottom: '30px' }}>
+              <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>About Me</h4>
+              <p style={{ lineHeight: '1.8', color: '#34495e', marginBottom: '15px', fontSize: '17px' }}>
+                {selectedMember.bio || "Professional mental health expert with extensive experience in supporting individuals and families through various challenges."}
+              </p>
+              {selectedMember.detailedBio && (
+                <p style={{ lineHeight: '1.8', color: '#34495e', fontSize: '17px' }}>{selectedMember.detailedBio}</p>
+              )}
+            </div>
 
-             {selectedMember.certifications && (
-               <div style={{ marginBottom: '30px' }}>
-                 <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Clinical Training</h4>
-                 <div style={{ display: 'grid', gap: '8px' }}>
-                   {selectedMember.certifications.map((cert, index) => (
-                     <div key={index} style={{ 
-                       background: '#f8f9fa',
-                       padding: '10px 14px',
-                       borderRadius: '6px',
-                       color: '#2c3e50',
-                       borderLeft: '3px solid #e74c3c'
-                     }}>
-                       {cert}
-                     </div>
-                   ))}
-                 </div>
-               </div>
-             )}
+            {selectedMember.qualifications && (
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Qualifications</h4>
+                <div style={{ display: 'grid', gap: '10px' }}>
+                  {selectedMember.qualifications.map((qual, index) => (
+                    <div key={index} style={{
+                      background: '#f8f9fa',
+                      padding: '12px 16px',
+                      borderRadius: '8px',
+                      borderLeft: '4px solid #3498db',
+                      color: '#2c3e50',
+                      fontWeight: '500'
+                    }}>
+                      {qual}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
-             {selectedMember.publications && (
-               <div style={{ marginBottom: '30px' }}>
-                 <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Publications</h4>
-                 <div style={{ display: 'grid', gap: '8px' }}>
-                   {selectedMember.publications.map((pub, index) => (
-                     <div key={index} style={{ 
-                       background: '#f8f9fa',
-                       padding: '10px 14px',
-                       borderRadius: '6px',
-                       color: '#2c3e50',
-                       borderLeft: '3px solid #27ae60'
-                     }}>
-                       {pub}
-                     </div>
-                   ))}
-                 </div>
-               </div>
-             )}
+            {selectedMember.expertise && (
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Specialties</h4>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                  {selectedMember.expertise.map((item, index) => (
+                    <span
+                      key={index}
+                      style={{
+                        background: 'linear-gradient(135deg, #2D5175 0%, #1790B3 100%)',
+                        color: 'white',
+                        padding: '8px 16px',
+                        borderRadius: '25px',
+                        fontSize: '14px',
+                        fontWeight: '500',
+                        boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
+                      }}
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
 
-             {selectedMember.presentations && (
-               <div style={{ marginBottom: '30px' }}>
-                 <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Presentations</h4>
-                 <div style={{ display: 'grid', gap: '8px' }}>
-                   {selectedMember.presentations.map((pres, index) => (
-                     <div key={index} style={{ 
-                       background: '#f8f9fa',
-                       padding: '10px 14px',
-                       borderRadius: '6px',
-                       color: '#2c3e50',
-                       borderLeft: '3px solid #f39c12'
-                     }}>
-                       {pres}
-                     </div>
-                   ))}
-                 </div>
-               </div>
-             )}
+            {selectedMember.certifications && (
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Clinical Training</h4>
+                <div style={{ display: 'grid', gap: '8px' }}>
+                  {selectedMember.certifications.map((cert, index) => (
+                    <div key={index} style={{
+                      background: '#f8f9fa',
+                      padding: '10px 14px',
+                      borderRadius: '6px',
+                      color: '#2c3e50',
+                      borderLeft: '3px solid #e74c3c'
+                    }}>
+                      {cert}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
-             {selectedMember.programs && (
-               <div style={{ marginBottom: '30px' }}>
-                 <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Programs & Initiatives</h4>
-                 <div style={{ display: 'grid', gap: '8px' }}>
-                   {selectedMember.programs.map((prog, index) => (
-                     <div key={index} style={{ 
-                       background: '#f8f9fa',
-                       padding: '10px 14px',
-                       borderRadius: '6px',
-                       color: '#2c3e50',
-                       borderLeft: '3px solid #9b59b6'
-                     }}>
-                       {prog}
-                     </div>
-                   ))}
-                 </div>
-               </div>
-             )}
+            {selectedMember.publications && (
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Publications</h4>
+                <div style={{ display: 'grid', gap: '8px' }}>
+                  {selectedMember.publications.map((pub, index) => (
+                    <div key={index} style={{
+                      background: '#f8f9fa',
+                      padding: '10px 14px',
+                      borderRadius: '6px',
+                      color: '#2c3e50',
+                      borderLeft: '3px solid #27ae60'
+                    }}>
+                      {pub}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
-             {selectedMember.experience && (
-               <div style={{ marginBottom: '30px' }}>
-                 <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Experience</h4>
-                 <div style={{ 
-                   background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                   padding: '16px 20px',
-                   borderRadius: '10px',
-                   color: 'white',
-                   fontWeight: '500'
-                 }}>
-                   {selectedMember.experience}
-                 </div>
-               </div>
-             )}
+            {selectedMember.presentations && (
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Presentations</h4>
+                <div style={{ display: 'grid', gap: '8px' }}>
+                  {selectedMember.presentations.map((pres, index) => (
+                    <div key={index} style={{
+                      background: '#f8f9fa',
+                      padding: '10px 14px',
+                      borderRadius: '6px',
+                      color: '#2c3e50',
+                      borderLeft: '3px solid #f39c12'
+                    }}>
+                      {pres}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {selectedMember.programs && (
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Programs & Initiatives</h4>
+                <div style={{ display: 'grid', gap: '8px' }}>
+                  {selectedMember.programs.map((prog, index) => (
+                    <div key={index} style={{
+                      background: '#f8f9fa',
+                      padding: '10px 14px',
+                      borderRadius: '6px',
+                      color: '#2c3e50',
+                      borderLeft: '3px solid #9b59b6'
+                    }}>
+                      {prog}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {selectedMember.experience && (
+              <div style={{ marginBottom: '30px' }}>
+                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Experience</h4>
+                <div style={{
+                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  padding: '16px 20px',
+                  borderRadius: '10px',
+                  color: 'white',
+                  fontWeight: '500'
+                }}>
+                  {selectedMember.experience}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}

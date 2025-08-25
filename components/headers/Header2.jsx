@@ -42,10 +42,21 @@ export default function Header2() {
             <div className="col-md-3">
               <div className="site-header-right">
                 <div className="header-inner">
-                  <div className="button">
-                    <Link href={`/contact`} className="btn">
-                    Contact Us
+                  <div className="button link-style2">
+                    <Link
+                      style={{
+                        padding: "10px 20px",
+                        borderRadius: "20px",
+                        backgroundColor: "#fff",
+                        fontSize: "16px",
+                        fontWeight: "500",
+                        textDecoration: "none",
+                        cursor: "pointer",
+                      }}
+                      href={`/contact`} className="read-more btn-read-more btn-3 ">
+                      Contact Us
                     </Link>
+
                   </div>
                 </div>
               </div>

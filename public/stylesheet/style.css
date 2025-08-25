@@ -814,6 +814,18 @@ a:focus {
   color: #ffff !important;
 }
 
+.btn-3 {
+  color: var(--primary-color) !important;
+  border: solid 2px var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.btn-3:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  border: solid 2px var(--primary-color);
+}
+
 /* button style 2
 ---------------------------------------------------------------*/
 
@@ -834,15 +846,13 @@ a:focus {
 ---------------------------------------------------------------*/
 :root {
   /* color */
-  --primary-color: #2D5175 !important;   /* Primary Brand Color - Dark Blue */
-  --primary-color2: #1790B3 !important;  /* Primary Brand Color - Bright Blue */
-  --primary-color3: #E8F4F8 !important;  /* Light background derived from primary */
-  --primary-color4: #5A8B89 !important;  /* Secondary Brand Color - Teal */
-  --primary-color5: #2D5175 !important;  /* Primary Brand Color for headings */
-  --accent-color: #D4A574 !important;    /* Secondary Brand Color - Golden */
+  --primary-color: #2d5175 !important; /* Primary Brand Color - Dark Blue */
+  --primary-color2: #68b0aa !important; /* Primary Brand Color - Bright Blue */
+  --primary-color3: #e8f4f8 !important; /* Light background derived from primary */
+  --primary-color4: #5a8b89 !important; /* Secondary Brand Color - Teal */
+  --primary-color5: #2d5175 !important; /* Primary Brand Color for headings */
+  --accent-color: #d4a574 !important; /* Secondary Brand Color - Golden */
 }
-
-
 
 /* button */
 
@@ -1085,7 +1095,7 @@ header.fixed-header {
   z-index: 999;
   box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 20%);
 }
-.height{
+.height {
   margin-top: -120px !important;
 }
 
@@ -1406,7 +1416,7 @@ button.btn.btn-outline-primary {
 #mainnav .menu li a {
   font-size: 18px;
   font-weight: 500;
-  color: var(--primary-color2);
+  color: var(--primary-color);
 }
 
 #mainnav .menu > li > a:hover,
@@ -1468,7 +1478,7 @@ button.btn.btn-outline-primary {
   display: block;
   padding: 0px 0px 0px 15px;
   line-height: 45px;
-  color: var(--primary-color2);
+  color: var(--primary-color);
   text-align: left;
 }
 
@@ -1512,7 +1522,7 @@ button.btn.btn-outline-primary {
 #mainnav > ul > li.menu-item-has-children > a::after {
   content: "\f107";
   font-family: "FontAwesome";
-  color: var(--primary-color2);
+  color: var(--primary-color);
   font-weight: 700;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
