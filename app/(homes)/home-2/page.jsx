@@ -13,7 +13,7 @@ import Shop from "@/components/homes/home-2/Shop";
 import Testimonials from "@/components/homes/home-2/Testimonials";
 import Team from "@/components/otherPages/Team";
 import React from "react";
-import Services3 from "@/components/homes/home-1/Services";
+import Services3 from "@/components/homes/home-2/Services3";
 export default function page() {
   return (
     <>
@@ -25,15 +25,13 @@ export default function page() {
         <div className="flat-team">
           <Team />
         </div>
-        <div className="flat-why-choose-us">
-          <Services />
-        </div>
+        <Services3 />
         {/* <Services2 /> */}
         {/* <Services3 /> */}
         {/* <About /> */}
         {/* <Shop /> */}
         {/* <Facts /> */}
-          <Portfolio />
+        <Portfolio />
         {/* <Testimonials /> */}
         {/* <Blogs /> */}
         <Footer1 />

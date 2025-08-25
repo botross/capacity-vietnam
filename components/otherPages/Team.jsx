@@ -62,6 +62,13 @@ export default function Team() {
                       src={member.imageSrc}
                       width={300}
                       height={340}
+                      quality={100}
+                      style={{
+                        borderRadius: '10px',
+                        objectFit: 'cover',
+                        objectPosition: 'center',
+                        minHeight: '430px',
+                      }}
                     />
                     <a className="icon-top" href="#" />
                   </div>
@@ -128,7 +135,7 @@ export default function Team() {
             className="team-modal"
             onClick={(e) => e.stopPropagation()}
             style={{
-              background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
+              background: '#ffffff',
               borderRadius: '20px',
               maxWidth: '900px',
               width: '100%',
@@ -136,15 +143,14 @@ export default function Team() {
               overflow: 'auto',
               padding: '40px',
               boxShadow: '0 25px 50px rgba(0,0,0,0.25)',
-              border: '1px solid rgba(255,255,255,0.2)',
-              backdropFilter: 'blur(10px)'
+              border: '2px solid var(--primary-color3)'
             }}
           >
             <div style={{ textAlign: 'right', marginBottom: '20px' }}>
               <button
                 onClick={() => setSelectedMember(null)}
                 style={{
-                  background: 'linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)',
+                  background: 'var(--primary-color)',
                   border: 'none',
                   fontSize: '20px',
                   cursor: 'pointer',
@@ -155,7 +161,7 @@ export default function Team() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: '0 4px 15px rgba(231, 76, 60, 0.3)',
+                  boxShadow: '0 4px 15px rgba(45, 81, 117, 0.3)',
                   transition: 'all 0.3s ease'
                 }}
                 onMouseOver={(e) => {
@@ -175,19 +181,21 @@ export default function Team() {
                 src={selectedMember.imageSrc}
                 width={200}
                 height={260}
-                style={{ borderRadius: '15px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', flexShrink: 0 }}
+                style={{ borderRadius: '15px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', flexShrink: 0,
+                  objectFit: 'cover',
+                 }}
               />
               <div style={{ flex: 1 }}>
-                <h2 style={{ color: '#2c3e50', marginBottom: '12px', fontSize: '36px', fontWeight: '600' }}>{selectedMember.name}</h2>
-                <h3 style={{ color: '#3498db', fontSize: '22px', marginBottom: '8px', fontWeight: '500' }}>{selectedMember.role}</h3>
+                <h2 style={{ color: 'var(--primary-color)', marginBottom: '12px', fontSize: '36px', fontWeight: '600' }}>{selectedMember.name}</h2>
+                <h3 style={{ color: 'var(--primary-color2)', fontSize: '22px', marginBottom: '8px', fontWeight: '500' }}>{selectedMember.role}</h3>
                 {selectedMember.title && (
-                  <p style={{ color: '#7f8c8d', fontSize: '18px', marginBottom: '20px', fontStyle: 'italic' }}>{selectedMember.title}</p>
+                  <p style={{ color: 'var(--primary-color4)', fontSize: '18px', marginBottom: '20px', fontStyle: 'italic' }}>{selectedMember.title}</p>
                 )}
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px', marginTop: '20px' }}>
                   {selectedMember.languages && (
                     <div style={{
-                      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                      background: 'linear-gradient(135deg, #2d5175 0%, #1a3a52 50%, #2d5175 100%)',
                       padding: '12px 16px',
                       borderRadius: '10px',
                       color: 'white'
@@ -198,7 +206,7 @@ export default function Team() {
                   )}
                   {selectedMember.workingHours && (
                     <div style={{
-                      background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+                      background: 'linear-gradient(135deg, #2d5175 0%, #1a3a52 50%, #2d5175 100%)',
                       padding: '12px 16px',
                       borderRadius: '10px',
                       color: 'white'
@@ -212,26 +220,26 @@ export default function Team() {
             </div>
 
             <div style={{ marginBottom: '30px' }}>
-              <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>About Me</h4>
-              <p style={{ lineHeight: '1.8', color: '#34495e', marginBottom: '15px', fontSize: '17px' }}>
+              <h4 style={{ color: 'var(--primary-color)', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid var(--primary-color2)', paddingBottom: '8px' }}>About Me</h4>
+              <p style={{ lineHeight: '1.8', color: 'var(--primary-color4)', marginBottom: '15px', fontSize: '17px' }}>
                 {selectedMember.bio || "Professional mental health expert with extensive experience in supporting individuals and families through various challenges."}
               </p>
               {selectedMember.detailedBio && (
-                <p style={{ lineHeight: '1.8', color: '#34495e', fontSize: '17px' }}>{selectedMember.detailedBio}</p>
+                <p style={{ lineHeight: '1.8', color: 'var(--primary-color4)', fontSize: '17px' }}>{selectedMember.detailedBio}</p>
               )}
             </div>
 
             {selectedMember.qualifications && (
               <div style={{ marginBottom: '30px' }}>
-                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Qualifications</h4>
+                <h4 style={{ color: 'var(--primary-color)', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid var(--primary-color2)', paddingBottom: '8px' }}>Qualifications</h4>
                 <div style={{ display: 'grid', gap: '10px' }}>
                   {selectedMember.qualifications.map((qual, index) => (
                     <div key={index} style={{
                       background: '#f8f9fa',
                       padding: '12px 16px',
                       borderRadius: '8px',
-                      borderLeft: '4px solid #3498db',
-                      color: '#2c3e50',
+                      borderLeft: '4px solid var(--primary-color2)',
+                      color: 'var(--primary-color)',
                       fontWeight: '500'
                     }}>
                       {qual}
@@ -243,19 +251,18 @@ export default function Team() {
 
             {selectedMember.expertise && (
               <div style={{ marginBottom: '30px' }}>
-                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Specialties</h4>
+                <h4 style={{ color: 'var(--primary-color)', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid var(--primary-color2)', paddingBottom: '8px' }}>Specialties</h4>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                   {selectedMember.expertise.map((item, index) => (
                     <span
                       key={index}
                       style={{
-                        background: 'linear-gradient(135deg, #2D5175 0%, #1790B3 100%)',
+                        background: 'var(--primary-color2)',
                         color: 'white',
                         padding: '8px 16px',
                         borderRadius: '25px',
                         fontSize: '14px',
                         fontWeight: '500',
-                        boxShadow: '0 4px 15px rgba(102, 126, 234, 0.3)'
                       }}
                     >
                       {item}
@@ -267,15 +274,15 @@ export default function Team() {
 
             {selectedMember.certifications && (
               <div style={{ marginBottom: '30px' }}>
-                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Clinical Training</h4>
+                <h4 style={{ color: 'var(--primary-color)', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid var(--primary-color2)', paddingBottom: '8px' }}>Clinical Training</h4>
                 <div style={{ display: 'grid', gap: '8px' }}>
                   {selectedMember.certifications.map((cert, index) => (
                     <div key={index} style={{
                       background: '#f8f9fa',
                       padding: '10px 14px',
                       borderRadius: '6px',
-                      color: '#2c3e50',
-                      borderLeft: '3px solid #e74c3c'
+                      color: 'var(--primary-color)',
+                      borderLeft: '3px solid var(--primary-color4)'
                     }}>
                       {cert}
                     </div>
@@ -286,15 +293,15 @@ export default function Team() {
 
             {selectedMember.publications && (
               <div style={{ marginBottom: '30px' }}>
-                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Publications</h4>
+                <h4 style={{ color: 'var(--primary-color)', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid var(--primary-color2)', paddingBottom: '8px' }}>Publications</h4>
                 <div style={{ display: 'grid', gap: '8px' }}>
                   {selectedMember.publications.map((pub, index) => (
                     <div key={index} style={{
                       background: '#f8f9fa',
                       padding: '10px 14px',
                       borderRadius: '6px',
-                      color: '#2c3e50',
-                      borderLeft: '3px solid #27ae60'
+                      color: 'var(--primary-color)',
+                      borderLeft: '3px solid var(--primary-color2)'
                     }}>
                       {pub}
                     </div>
@@ -305,15 +312,15 @@ export default function Team() {
 
             {selectedMember.presentations && (
               <div style={{ marginBottom: '30px' }}>
-                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Presentations</h4>
+                <h4 style={{ color: 'var(--primary-color)', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid var(--primary-color2)', paddingBottom: '8px' }}>Presentations</h4>
                 <div style={{ display: 'grid', gap: '8px' }}>
                   {selectedMember.presentations.map((pres, index) => (
                     <div key={index} style={{
                       background: '#f8f9fa',
                       padding: '10px 14px',
                       borderRadius: '6px',
-                      color: '#2c3e50',
-                      borderLeft: '3px solid #f39c12'
+                      color: 'var(--primary-color)',
+                      borderLeft: '3px solid var(--accent-color)'
                     }}>
                       {pres}
                     </div>
@@ -324,15 +331,15 @@ export default function Team() {
 
             {selectedMember.programs && (
               <div style={{ marginBottom: '30px' }}>
-                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Programs & Initiatives</h4>
+                <h4 style={{ color: 'var(--primary-color)', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid var(--primary-color2)', paddingBottom: '8px' }}>Programs & Initiatives</h4>
                 <div style={{ display: 'grid', gap: '8px' }}>
                   {selectedMember.programs.map((prog, index) => (
                     <div key={index} style={{
                       background: '#f8f9fa',
                       padding: '10px 14px',
                       borderRadius: '6px',
-                      color: '#2c3e50',
-                      borderLeft: '3px solid #9b59b6'
+                      color: 'var(--primary-color)',
+                      borderLeft: '3px solid var(--primary-color4)'
                     }}>
                       {prog}
                     </div>
@@ -343,13 +350,14 @@ export default function Team() {
 
             {selectedMember.experience && (
               <div style={{ marginBottom: '30px' }}>
-                <h4 style={{ color: '#2c3e50', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid #3498db', paddingBottom: '8px' }}>Experience</h4>
+                <h4 style={{ color: 'var(--primary-color)', marginBottom: '15px', fontSize: '20px', fontWeight: '600', borderBottom: '2px solid var(--primary-color2)', paddingBottom: '8px' }}>Experience</h4>
                 <div style={{
-                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  background: 'var(--primary-color3)',
                   padding: '16px 20px',
                   borderRadius: '10px',
-                  color: 'white',
-                  fontWeight: '500'
+                  color: 'var(--primary-color)',
+                  fontWeight: '500',
+                  border: '2px solid var(--primary-color4)'
                 }}>
                   {selectedMember.experience}
                 </div>

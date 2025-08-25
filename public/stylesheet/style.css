@@ -846,12 +846,12 @@ a:focus {
 ---------------------------------------------------------------*/
 :root {
   /* color */
-  --primary-color: #2d5175 !important; /* Primary Brand Color - Dark Blue */
-  --primary-color2: #68b0aa !important; /* Primary Brand Color - Bright Blue */
-  --primary-color3: #e8f4f8 !important; /* Light background derived from primary */
+  --primary-color: #2d5175 !important; 
+  --primary-color2: #68b0aa !important;
+  --primary-color3: #e8f4f8 !important; 
   --primary-color4: #5a8b89 !important; /* Secondary Brand Color - Teal */
-  --primary-color5: #2d5175 !important; /* Primary Brand Color for headings */
-  --accent-color: #d4a574 !important; /* Secondary Brand Color - Golden */
+  --primary-color5: #2d5175 !important; 
+  --accent-color: #d4a574 !important; 
 }
 
 /* button */
@@ -1208,7 +1208,7 @@ header.fixed-header {
 
 .top-header {
   padding: 0 3.2% 0 4%;
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, #2d5175 0%, #1a3a52 50%, #2d5175 100%);
 }
 
 .top-header .top-bar-left {

@@ -15,7 +15,11 @@ export default function page() {
       <div className="boxed blog">
         <Topbar />
         <Header2 />
-        <Pagetitle />
+        <Pagetitle
+          pageName="About Us"
+          overlayImage="/about-us.jpg"
+          backgroundPosition="center 35%"
+        />
         <About1 />
         <div
           className="themesflat-spacer clearfix"

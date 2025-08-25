@@ -95,7 +95,7 @@ export const teamMembers = [
 export const teamMembers2 = [
   {
     id: 1,
-    imageSrc: "/images/team/staff1.png",
+    imageSrc: "/images/team/staff1.jpg",
     name: "Rhianon Walls",
     role: "Director of CapacityVietnam",
     title: "Master Counseling, Senior Counselor & Trainer",
@@ -132,7 +132,7 @@ export const teamMembers2 = [
   },
   {
     id: 2,
-    imageSrc: "/images/team/staff2.png",
+    imageSrc: "/images/team/staff2.jpg",
     name: "Michael Walls",
     role: "Project Manager",
     title: "Facilitator & Project Officer",
@@ -161,7 +161,7 @@ export const teamMembers2 = [
   },
   {
     id: 3,
-    imageSrc: "/images/team/staff3.png",
+    imageSrc: "/images/team/staff3.jpg",
     name: "Esther Giang Nguyen",
     role: "Counselor/Trainer/Project Coordinator",
     title: "Master of Arts in Counseling",
