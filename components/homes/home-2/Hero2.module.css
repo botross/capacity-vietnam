@@ -7,6 +7,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+    padding: 40px 20px;
   }
   
   .container {
@@ -18,6 +19,7 @@
     align-items: center;
     position: relative;
     z-index: 2;
+    width: 100%;
   }
   
   .imageSection {
@@ -41,20 +43,21 @@
   }
   
   .title {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
-    color: #2c5282;
+    color: var(--primary-color, #2c5282);
     line-height: 1.2;
     margin-bottom: 24px;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
   
   .description {
-    font-size: 1.125rem;
-    color: #4a5568;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: var(--primary-color4, #4a5568);
     line-height: 1.6;
     margin-bottom: 32px;
     font-weight: 400;
+    max-width: 500px;
   }
   
   .ctaButton {
@@ -77,38 +80,66 @@
   /* Decorative Shapes Image */
   .shapesSection {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -50px;
+    right: -50px;
     z-index: 1;
-    width: 250px;
-    height: 250px;
+    width: clamp(200px, 20vw, 300px);
+    height: clamp(200px, 20vw, 300px);
+    pointer-events: none;
   }
   
   .shapesImage {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    opacity: 0.9;
+    opacity: 0.8;
+    object-fit: contain;
   }
   
   /* Responsive Design */
+  @media (max-width: 1200px) {
+    .hero {
+      padding: 40px 30px;
+    }
+    
+    .container {
+      gap: 50px;
+      max-width: 1000px;
+    }
+    
+    .contentSection {
+      padding-left: 30px;
+    }
+    
+    .shapesSection {
+      width: clamp(180px, 18vw, 250px);
+      height: clamp(180px, 18vw, 250px);
+    }
+  }
+  
   @media (max-width: 1024px) {
+    .hero {
+      padding: 40px 25px;
+    }
+    
     .container {
       gap: 40px;
+      max-width: 900px;
     }
     
     .contentSection {
       padding-left: 20px;
     }
     
-    .title {
-      font-size: 3rem;
+    .description {
+      max-width: 450px;
     }
   }
   
   @media (max-width: 768px) {
     .hero {
-      padding: 60px 0;
+      min-height: auto;
+      padding: 60px 20px;
     }
     
     .container {
@@ -124,46 +155,81 @@
     
     .imageSection {
       order: 1;
-    }
-    
-    .title {
-      font-size: 2.5rem;
+      max-width: 500px;
+      margin: 0 auto;
     }
     
     .description {
-      font-size: 1rem;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
     }
     
-    /* Adjust shapes image for mobile */
+    .ctaButton {
+      display: inline-block;
+      margin: 0 auto;
+    }
+    
+    /* Hide shapes on tablet and mobile for cleaner look */
     .shapesSection {
-      position: static;
-      transform: none;
-      text-align: center;
-      margin-top: 20px;
-      order: 3;
-    }
-    
-    .shapesImage {
-      max-width: 200px;
+      display: none;
     }
   }
   
-  @media (max-width: 480px) {
-    .container {
-      padding: 0 16px;
+  @media (max-width: 640px) {
+    .hero {
+      padding: 40px 20px;
     }
     
-    .title {
-      font-size: 2rem;
-      margin-bottom: 20px;
+    .container {
+      gap: 30px;
+    }
+    
+    .imageSection {
+      max-width: 400px;
     }
     
     .description {
       margin-bottom: 28px;
     }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 30px 16px;
+    }
+    
+    .container {
+      gap: 25px;
+    }
+    
+    .imageSection {
+      max-width: 320px;
+    }
+    
+    .description {
+      margin-bottom: 24px;
+    }
     
     .ctaButton {
       padding: 14px 28px;
+      font-size: 0.95rem;
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .hero {
+      padding: 25px 12px;
+    }
+    
+    .container {
+      gap: 20px;
+    }
+    
+    .ctaButton {
+      padding: 12px 24px;
       font-size: 0.9rem;
     }
   }
