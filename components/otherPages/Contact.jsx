@@ -7,35 +7,35 @@ export default function Contact() {
         <div className="row">
           <div className="col-md-5 wow fadeInUp">
             <div className="contact-left">
-              <h3 className="section-subtitle mg-bottom-22">GET IN TOUCH</h3>
-              <h2 className="section-title mg-bottom-15">
+              <h3 className="section-subtitle mg-bottom-22" style={{ color: 'var(--primary-color)' }}>GET IN TOUCH</h3>
+              <h2 className="section-title mg-bottom-15" style={{ color: 'var(--primary-color)' }}>
                 Reach out for mental health support and guidance.
               </h2>
-              <p className="section-desc mg-bottom-60">
+              <p className="section-desc mg-bottom-60" style={{ color: 'var(--primary-color)' }}>
                 Contact Capacity Vietnam for professional mental health support and counseling services
-throughout Vietnam. We're here to help.
+                throughout Vietnam. We're here to help.
               </p>
               <div className="address-box mg-bottom30">
                 <div className="contact-location icon-map" />
-                <div className="info text-pri2-color">
-                  <h3 className="section-heading-jost-size20">Our Address</h3>
-                  <p className="desc-box text-pri2-color">
+                <div className="info">
+                  <h3 className="section-heading-jost-size20" style={{ color: 'var(--primary-color)' }}>Our Address</h3>
+                  <p className="desc-box" style={{ color: 'var(--primary-color)' }}>
                     2 St, Loskia sripur, amukara.
                   </p>
                 </div>
               </div>
               <div className="address-box mg-bottom30">
                 <div className="contact-phone icon-phone" />
-                <div className="info text-pri2-color">
-                  <h3 className="section-heading-jost-size20">Our Phone</h3>
-                  <p className="desc-box text-pri2-color">000 2324 39493</p>
+                <div className="info">
+                  <h3 className="section-heading-jost-size20" style={{ color: 'var(--primary-color)' }}>Our Phone</h3>
+                  <p className="desc-box" style={{ color: 'var(--primary-color)' }}>000 2324 39493</p>
                 </div>
               </div>
               <div className="address-box">
                 <div className="contact-mail icon-mail" />
-                <div className="info text-pri2-color">
-                  <h3 className="section-heading-jost-size20">Our Email</h3>
-                  <p className="desc-box text-pri2-color">name@website.com</p>
+                <div className="info">
+                  <h3 className="section-heading-jost-size20" style={{ color: 'var(--primary-color)' }}>Our Email</h3>
+                  <p className="desc-box" style={{ color: 'var(--primary-color)' }}>name@website.com</p>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ throughout Vietnam. We're here to help.
               >
                 <div className="input-row">
                   <div className="input-name">
-                    <label htmlFor="name" className="heading-features">
+                    <label htmlFor="name" className="heading-features" style={{ color: 'var(--primary-color)' }}>
                       Name (required)
                     </label>
                     <input
@@ -71,7 +71,7 @@ throughout Vietnam. We're here to help.
                     />
                   </div>
                   <div className="input-phone">
-                    <label htmlFor="phone" className="heading-features">
+                    <label htmlFor="phone" className="heading-features" style={{ color: 'var(--primary-color)' }}>
                       Phone (optional)
                     </label>
                     <input
@@ -86,7 +86,7 @@ throughout Vietnam. We're here to help.
                 </div>
                 <div className="input-row">
                   <div className="input-email">
-                    <label id="email" className="heading-features">
+                    <label id="email" className="heading-features" style={{ color: 'var(--primary-color)' }}>
                       Email address (required)
                     </label>
                     <input
@@ -98,7 +98,7 @@ throughout Vietnam. We're here to help.
                     />
                   </div>
                   <div className="input-services">
-                    <label htmlFor="services" className="heading-features">
+                    <label htmlFor="services" className="heading-features" style={{ color: 'var(--primary-color)' }}>
                       Services (required)
                     </label>
                     <select
@@ -114,7 +114,7 @@ throughout Vietnam. We're here to help.
                   </div>
                 </div>
                 <div className="input-message">
-                  <label htmlFor="message" className="heading-features">
+                  <label htmlFor="message" className="heading-features" style={{ color: 'var(--primary-color)' }}>
                     Your message*
                   </label>
                   <textarea

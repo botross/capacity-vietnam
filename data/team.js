@@ -132,7 +132,7 @@ export const teamMembers2 = [
   },
   {
     id: 2,
-    imageSrc: "/images/team/staff2.jpg",
+    imageSrc: "/images/team/staff2.png",
     name: "Michael Walls",
     role: "Project Manager",
     title: "Facilitator & Project Officer",

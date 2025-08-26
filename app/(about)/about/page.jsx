@@ -8,6 +8,8 @@ import About from "@/components/homes/home-2/About";
 import Facts from "@/components/homes/home-2/Facts";
 import Testimonials from "@/components/homes/home-2/Testimonials";
 import React from "react";
+import About2 from "./AboutUs2";
+import PageTitle from "@/components/common/Pagetitle";
 
 export default function page() {
   return (
@@ -15,24 +17,18 @@ export default function page() {
       <div className="boxed blog">
         <Topbar />
         <Header2 />
-        <Pagetitle
-          pageName="About Us"
+        <PageTitle
+          pageName="About Capacity Vietnam"
+          pageDescription="Dedicated to transforming mental health care across Vietnam through compassionate, evidence-based treatment and unwavering support for every individual's journey to wellness."
           overlayImage="/about-us.jpg"
           backgroundPosition="center 35%"
         />
         <About1 />
-        <div
-          className="themesflat-spacer clearfix"
-          data-desktop={134}
-          data-mobile={60}
-          data-smobile={60}
+        <About2 />
+        <div style={{
+          marginTop:"-140px",
+        }}
         />
-
-        <About />
-        <Process />
-        <Facts />
-
-        <Testimonials />
         <Footer1 />
       </div>
     </>

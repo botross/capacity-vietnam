@@ -37,13 +37,22 @@ export const menuItems = [
   //   ],
   // },
   {
-    title: "Blog",
-    href: "/blog",
+    title: "Opportunities",
+    href: "/volunteer",
 
     subMenu: [
-      { title: "Blog Standard", href: "/blog" },
-      { title: "Blog Detail", href: "/blog-detail" },
+      { title: "Volunteer", href: "/volunteer" },
+      { title: "Donate", href: "/donate" },
     ],
   },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+
+  //   subMenu: [
+  //     { title: "Blog Standard", href: "/blog" },
+  //     { title: "Blog Detail", href: "/blog-detail" },
+  //   ],
+  // },
   { title: "Contact", href: "/contact" },
 ];

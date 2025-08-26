@@ -226,3 +226,72 @@
   max-height: 180px;
   display: block;
 }
+
+/* Hide image-desc on small screens, show only on laptop and up */
+.flat-about .image-desc {
+  display: none !important;
+}
+
+@media (min-width: 1102px) {
+  .flat-about .image-desc {
+    display: block !important;
+  }
+}
+/* Hide image-desc on small screens, show only on laptop and up */
+.flat-about .image-desc2 {
+  display: none !important;
+}
+
+@media (min-width: 1102px) {
+  .flat-about .image-desc2 {
+    display: block !important;
+  }
+}
+
+/* Ensure main image stays circular on all screen sizes */
+.flat-about .main-post-about {
+  border-radius: 50% !important;
+  aspect-ratio: 1/1 !important;
+  object-fit: cover !important;
+}
+
+/* Responsive circular image sizing */
+@media (max-width: 991px) {
+  .flat-about .main-post-about {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .flat-about .main-post-about {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .flat-about .main-post-about {
+    width: 350px !important;
+    height: 350px !important;
+  }
+}
+
+/* Contact form input styling */
+.flat-contact-page .input-contact,
+.flat-contact-page .input-contact-message,
+.flat-contact-page .input-select {
+  color: var(--primary-color) !important;
+}
+
+/* Contact form placeholder styling */
+.flat-contact-page .input-contact::placeholder,
+.flat-contact-page .input-contact-message::placeholder {
+  color: var(--primary-color) !important;
+  opacity: 0.7;
+}
+
+/* Contact form select option styling */
+.flat-contact-page .input-select option {
+  color: var(--primary-color) !important;
+}

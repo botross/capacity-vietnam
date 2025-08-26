@@ -364,6 +364,9 @@
     width: 50%;
     text-align: right;
 }
+.flat-about .image-desc2 {
+}
+
 .flat-about .image {
     transition-duration: 1s;
     text-align: right;

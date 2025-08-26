@@ -6,6 +6,7 @@ import Team from "@/components/otherPages/Team";
 import Image from "next/image";
 
 import React from "react";
+import CallToAction from "@/components/common/CallToAction";
 
 export default function page() {
   return (
@@ -20,6 +21,10 @@ export default function page() {
           backgroundPosition="center 25%"
         />
         <Team />
+
+        <div className="container">
+          <CallToAction />
+        </div>
 
         <Footer1 />
       </div>

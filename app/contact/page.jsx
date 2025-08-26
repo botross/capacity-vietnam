@@ -12,7 +12,12 @@ export default function page() {
       <div className="boxed blog">
         <Topbar />
         <Header2 />
-        <Pagetitle pageName="Contact" />
+        <Pagetitle 
+        pageName="Contact" 
+        backgroundImage="/images/contact.jpg"
+        overlayImage="/contact.jpg"
+        backgroundPosition="center 25%"
+        />
         <Contact />
         <div className="themesflat-map">
           <iframe
@@ -23,7 +28,10 @@ export default function page() {
             tabIndex={0}
           />
         </div>
-
+        <div style={{
+          marginTop:"-100px",
+        }}
+        />
         <Footer1 />
       </div>
     </>

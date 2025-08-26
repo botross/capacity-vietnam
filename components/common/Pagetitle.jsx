@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import styles from './PageTitle.module.css';
 
-const PageTitle = ({ pageName, backgroundImage, overlayImage, backgroundPosition = 'center 25%' }) => {
+const PageTitle = ({ pageName, backgroundImage, overlayImage, backgroundPosition = 'center 25%', pageDescription }) => {
   const titleRef = useRef(null);
   const particlesRef = useRef(null);
 
@@ -36,26 +36,26 @@ const PageTitle = ({ pageName, backgroundImage, overlayImage, backgroundPosition
     <div className={styles.pageTitle}>
       {/* Background Image */}
       {backgroundImage && (
-        <div 
-          className={styles.backgroundImage} 
-          style={{ 
+        <div
+          className={styles.backgroundImage}
+          style={{
             '--bg-image': `url(${backgroundImage})`,
             backgroundPosition: backgroundPosition,
           }}
         />
       )}
-      
+
       {/* Overlay Image */}
       {overlayImage && (
-        <div 
-          className={styles.overlayImage} 
-          style={{ 
+        <div
+          className={styles.overlayImage}
+          style={{
             '--overlay-image': `url(${overlayImage})`,
             backgroundPosition: backgroundPosition,
           }}
         />
       )}
-      
+
       {/* Animated Background Elements */}
       <div className={styles.backgroundElements}>
         <div className={styles.gradientOverlay}></div>
@@ -75,13 +75,26 @@ const PageTitle = ({ pageName, backgroundImage, overlayImage, backgroundPosition
             <div className={styles.titleBackground}>
               <span className={styles.titleHighlight}></span>
             </div>
-            <h1 className={styles.mainTitle}>
-              <span className={styles.titleWord1}>{pageName}</span>
-              <span className={styles.titleAccent}>.</span>
-            </h1>
+            <div className={styles.mainTitle}>
+              <p className={styles.titleWord1}>{pageName}</p>
+              <p style={{
+                fontSize: '1.6rem',
+                fontWeight: '400',
+                color: 'rgba(255, 255, 255,1)',
+                alignSelf: 'center',
+                textAlign: 'center',
+                marginTop: '20px',
+                marginBottom: '20px',
+                maxWidth: '1000px',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+              }}>{pageDescription}</p>
+              {!pageName &&
+                <span className={styles.titleAccent}>.</span>}
+            </div>
           </div>
 
-      
+
 
         </div>
       </div>
@@ -92,7 +105,7 @@ const PageTitle = ({ pageName, backgroundImage, overlayImage, backgroundPosition
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className={styles.wavePath}></path>
         </svg>
       </div>
-    </div>
+    </div >
   );
 };
 
