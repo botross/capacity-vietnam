@@ -1,8 +1,12 @@
-// components/Hero.jsx
+"use client"
 import Image from 'next/image';
 import styles from './Hero2.module.css';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+
 
 const Hero = () => {
+  const router = useRouter();
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
@@ -21,7 +25,7 @@ const Hero = () => {
           />
         </div>
 
-        <div className={styles.contentSection}>
+        <div style={{ zIndex: 100 }} className={styles.contentSection}>
           <h1 className={styles.title}>
             Building Your Inner <br />Strength Together
           </h1>
@@ -30,9 +34,12 @@ const Hero = () => {
             Empowering individuals, families and workplaces through counselling, practical workshops, insightful trainings that understand your journey.
           </p>
 
-          <button className={styles.ctaButton}>
+          <Link
+            href="/contact"
+            style={{ zIndex: 1000 }}
+            className={styles.ctaButton}>
             Connect with us
-          </button>
+          </Link>
         </div>
 
         {/* Decorative Shapes Image */}

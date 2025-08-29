@@ -32,7 +32,7 @@
 
 .circleShape {
   position: absolute;
-  bottom: -150px;
+  bottom: -200px;
   left: -50px;
   width: 40vw;
   height: 40vw;
@@ -40,7 +40,7 @@
   border-radius: 50%;
   opacity: 0.5;
 }
-.imageWrapper{
+.imageWrapper {
   width: 80vw;
   height: 60vh;
   position: absolute;
@@ -50,7 +50,7 @@
 }
 
 .heroImage {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .contentSection {
@@ -88,8 +88,7 @@
 }
 
 .ctaButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(79, 209, 199, 0.4);
+  color: #fff;
 }
 
 /* Decorative Shapes Image */
@@ -148,9 +147,22 @@
   .description {
     max-width: 450px;
   }
+
+  /* Start adjusting image for tablet */
+  .imageWrapper {
+    width: 70vw;
+    height: 50vh;
+    left: -150px;
+  }
+
+  .circleShape {
+    width: 35vw;
+    height: 35vw;
+    bottom: -120px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .hero {
     min-height: auto;
     padding: 60px 20px;
@@ -167,7 +179,29 @@
     order: 2;
   }
 
+  /* Hide circle on mobile */
+  .circleShape {
+    display: none;
+  }
 
+  /* Reposition image wrapper for mobile */
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    left: 0;
+    bottom: 0;
+    order: 1;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+  }
 
   .description {
     max-width: 100%;
@@ -195,6 +229,11 @@
     gap: 30px;
   }
 
+  .imageWrapper {
+    height: 350px;
+    max-width: 450px;
+  }
+
   .description {
     margin-bottom: 28px;
   }
@@ -209,8 +248,9 @@
     gap: 25px;
   }
 
-  .imageSection {
-    max-width: 320px;
+  .imageWrapper {
+    height: 300px;
+    max-width: 400px;
   }
 
   .description {
@@ -232,6 +272,11 @@
 
   .container {
     gap: 20px;
+  }
+
+  .imageWrapper {
+    height: 280px;
+    max-width: 320px;
   }
 
   .ctaButton {
