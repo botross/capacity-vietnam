@@ -23,8 +23,8 @@ export default function Services() {
               data-smobile={60}
             />
           </div>
-          <div className="item-four-column">
-            <div className="our-services-box hover-up-style2 mg-bottom30 wow fadeInDown">
+          <div className="col-md-6">
+            <div className="our-services-box hover-up-style2 mg-bottom30 wow fadeInLeft">
               <div className="our-services-overlay" />
               <span className="tf-icon icon-size icon-icon-farming-layer">
                 <span className="path1" />
@@ -35,11 +35,19 @@ export default function Services() {
               </span>
               <div className="content-features">
                 <Link href={`/service-details`}>
-                  <h3 className="section-heading-jost-size22">Individual Counseling</h3>
+                  <h3 className="section-heading-jost-size22">Individual & Couple Counseling</h3>
                 </Link>
                 <p className="section-desc">
-                  Professional one-on-one therapy sessions with licensed mental health counselors to address personal challenges and support recovery goals.
+                  Compassionate and professional counseling services to support personal growth, strengthen relationships, and promote emotional well-being. We provide tailored sessions for individuals, adolescents, couples, and groups in a safe and confidential space.
                 </p>
+                <ul className="service-features" style={{marginTop: '15px', paddingLeft: '20px', listStyle: 'disc'}}>
+                  <li>Personalized treatment plans</li>
+                  <li>Confidential and supportive sessions</li>
+                  <li>Relationship and family dynamics support</li>
+                  <li>Communication and conflict resolution skills</li>
+                  <li>Flexible scheduling</li>
+                  <li>Evidence-based approaches</li>
+                </ul>
                 <div className="link2 link-style2">
                   <Link href={`/service-details`} className="read-more">
                     Read More
@@ -48,63 +56,8 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="item-four-column">
-            <div className="our-services-box mg-bottom30 wow fadeInUp">
-              <div className="our-services-overlay active" />
-              <span className="tf-icon icon-size3 icon-Group-7527">
-                <span className="path1" />
-                <span className="path2" />
-                <span className="path3" />
-              </span>
-              <div className="content-features link-style3">
-                <Link href={`/service-details`}>
-                  <h3 className="section-heading-jost-size22">
-                    Family Therapy
-                  </h3>
-                </Link>
-                <p className="section-desc white">
-                  Comprehensive mental health support services designed to help individuals
-                  and families through professional counseling and therapy services.
-                </p>
-                <div className="link2 link-style3">
-                  <Link href={`/service-details`} className="read-more">
-                    Read More
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="item-four-column">
-            <div className="our-services-box hover-up-style2 wow fadeInLeft">
-              <div className="our-services-overlay" />
-              <span className="tf-icon icon-size2 icon-Group-7526">
-                <span className="path1" />
-                <span className="path2" />
-                <span className="path3" />
-                <span className="path4" />
-                <span className="path5" />
-                <span className="path6" />
-              </span>
-              <div className="content-features">
-                <Link href={`/service-details`}>
-                  <h3 className="section-heading-jost-size22">
-                    Irrigation &amp; Drainage
-                  </h3>
-                </Link>
-                <p className="section-desc">
-                  Comprehensive mental health support services designed to help individuals
-                  and families through professional counseling and therapy services.
-                </p>
-                <div className="link2 link-style2">
-                  <Link href={`/service-details`} className="read-more">
-                    Read More
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="item-four-column">
-            <div className="our-services-box hover-up-style2 wow fadeInRight">
+          <div className="col-md-6">
+            <div className="our-services-box hover-up-style2 mg-bottom30 wow fadeInRight">
               <div className="our-services-overlay" />
               <span className="tf-icon icon-size4 icon-Group-7528">
                 <span className="path1" />
@@ -114,13 +67,18 @@ export default function Services() {
               <div className="content-features">
                 <Link href={`/service-details`}>
                   <h3 className="section-heading-jost-size22">
-                    Corporate Training
+                    Workplace & Community Training
                   </h3>
                 </Link>
                 <p className="section-desc">
-                  Comprehensive mental health support services designed to help individuals
-                  and families through professional counseling and therapy services.
+                  Comprehensive mental health training and workshops designed to create supportive workplace and community environments.
                 </p>
+                <ul className="service-features" style={{marginTop: '15px', paddingLeft: '20px', listStyle: 'disc'}}>
+                  <li>Mental health awareness</li>
+                  <li>Stress management</li>
+                  <li>Team building</li>
+                  <li>Leadership support</li>
+                </ul>
                 <div className="link2 link-style2">
                   <Link href={`/service-details`} className="read-more">
                     Read More

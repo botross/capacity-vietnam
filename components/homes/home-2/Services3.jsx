@@ -8,22 +8,9 @@ const OurServices = () => {
   const services = [
     {
       id: 1,
-      title: "Individual Counselling",
-      description: "One-on-one therapeutic sessions tailored to your unique needs and journey towards mental wellness.",
-      fullDescription: "Our individual counselling sessions provide a safe, confidential space where you can explore your thoughts, feelings, and experiences. Using evidence-based approaches, our qualified therapists work with you to develop coping strategies, process life challenges, and build resilience for lasting positive change.",
-      icon: (
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <circle cx="12" cy="7" r="4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-      ),
-      features: ["Personalized treatment plans", "Confidential sessions", "Flexible scheduling", "Evidence-based approaches"]
-    },
-    {
-      id: 2,
-      title: "Family & Couples Therapy",
-      description: "Strengthen relationships and improve communication through guided therapeutic sessions for families and couples.",
-      fullDescription: "Relationships are at the heart of our wellbeing. Our family and couples therapy sessions help improve communication, resolve conflicts, and strengthen emotional bonds. We create a supportive environment where all voices are heard and respected, fostering understanding and healing within your most important relationships.",
+      title: "Individual & Couple Counseling",
+      description: "Compassionate and professional counseling services to support personal growth, strengthen relationships, and promote emotional well-being.",
+      fullDescription: "Compassionate and professional counseling services to support personal growth, strengthen relationships, and promote emotional well-being. We provide tailored sessions for individuals, adolescents, couples, and groups in a safe and confidential space.",
       icon: (
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -32,13 +19,13 @@ const OurServices = () => {
           <path d="M16 3.13C16.8604 3.35031 17.623 3.85687 18.1676 4.55336C18.7122 5.24985 19.0078 6.11219 19.0078 7.005C19.0078 7.89781 18.7122 8.76015 18.1676 9.45664C17.623 10.1531 16.8604 10.6597 16 10.88" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       ),
-      features: ["Relationship building", "Communication skills", "Conflict resolution", "Family dynamics support"]
+      features: ["Personalized treatment plans", "Confidential and supportive sessions", "Relationship and family dynamics support", "Communication and conflict resolution skills", "Flexible scheduling", "Evidence-based approaches"]
     },
     {
-      id: 3,
-      title: "Workplace Training",
-      description: "Comprehensive mental health training and workshops designed to create supportive workplace environments.",
-      fullDescription: "Creating mentally healthy workplaces is essential for employee wellbeing and organizational success. Our workplace training programs cover stress management, mental health awareness, building resilience, and creating supportive team cultures. We provide practical tools and strategies that can be immediately implemented in your workplace.",
+      id: 2,
+      title: "Workplace & Community Training",
+      description: "Comprehensive mental health training and workshops designed to create supportive workplace and community environments.",
+      fullDescription: "Comprehensive mental health training and workshops designed to create supportive workplace and community environments. Our programs provide practical tools and strategies for building mentally healthy communities.",
       icon: (
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
