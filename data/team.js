@@ -16,7 +16,7 @@ export const teamMembers = [
     ],
     certifications: [
       "Emotional Focus Therapy for Individuals & Couples",
-      "Dialectical Behavioral Therapy", 
+      "Dialectical Behavioral Therapy",
       "Rational Emotive Behavioral Therapy",
       "Cognitive Behavioral Therapy",
       "Person-Centered Therapy",
@@ -93,36 +93,6 @@ export const teamMembers = [
 ];
 
 export const teamMembers2 = [
-
-  {
-    id: 2,
-    imageSrc: "/images/team/staff2.png",
-    name: "Michael Walls",
-    role: "Project Manager",
-    title: "Facilitator & Project Officer",
-    bio: "Michael Walls is an Australian facilitator and project officer who has lived in Hanoi with his family since 2012. With a background in sales, employment services, and building consultancy in Australia, Michael now serves as a key member of Capacity Vietnam, a social enterprise supporting mental health through Workplace Wellness, Life Skills, and English Club programs across Hanoi.",
-    detailedBio: "Michael brings over four decades of professional experience and a deep commitment to community development, including past work in poverty alleviation and education.",
-    expertise: ["Workplace Wellness", "Life Skills", "English Club programs", "Community development", "Poverty alleviation", "Education", "Organizational development", "Project management"],
-    qualifications: [
-      "Project Management",
-      "Facilitation & Training",
-      "Community Development",
-      "Organizational Development"
-    ],
-    experience: "Over four decades of professional experience",
-    workingHours: "Monday to Friday, 9:00 AM - 6:00 PM",
-    languages: ["English", "Vietnamese"],
-    programs: [
-      "Workplace Wellness Programs",
-      "Life Skills Development",
-      "English Club Programs",
-      "Community Outreach Initiatives"
-    ],
-    socialLinks: [
-      { icon: "fa fa-linkedin", url: "#" },
-      { icon: "fa fa-envelope", url: "mailto:michael@capacityvietnam.com" },
-    ],
-  },
   {
     id: 1,
     imageSrc: "/images/team/staff1.jpg",
@@ -140,14 +110,14 @@ export const teamMembers2 = [
     ],
     certifications: [
       "Emotional Focus Therapy for Individuals & Couples",
-      "Dialectical Behavioral Therapy", 
+      "Dialectical Behavioral Therapy",
       "Rational Emotive Behavioral Therapy",
       "Cognitive Behavioral Therapy",
       "Person-Centered Therapy",
       "Art Therapy"
     ],
-    workingHours: "Flexible scheduling available for individual and corporate clients",
-    languages: ["English", "Vietnamese"],
+    workingHours: "Monday to Friday, 9:00 AM - 7:00 PM",
+    languages: ["English"],
     publications: [
       "Becoming an Emotional First Aider",
       "Workplace Well-being Training Course"
@@ -182,7 +152,7 @@ export const teamMembers2 = [
       "Dialectical Behavior Therapy (DBT)",
       "Trauma-Informed Care"
     ],
-    workingHours: "Tuesday to Saturday, 10:00 AM - 7:00 PM",
+    workingHours: "Monday to Friday, 9:00 AM - 7:00 PM",
     languages: ["English", "Vietnamese"],
     publications: [
       "Becoming an Emotional First Aider",
@@ -195,6 +165,35 @@ export const teamMembers2 = [
     socialLinks: [
       { icon: "fa fa-linkedin", url: "#" },
       { icon: "fa fa-envelope", url: "mailto:esther@capacityvietnam.com" },
+    ],
+  },
+  {
+    id: 2,
+    imageSrc: "/images/team/staff2.png",
+    name: "Michael Walls",
+    role: "Project Manager",
+    title: "Facilitator & Project Officer",
+    bio: "Michael Walls is an Australian facilitator and project officer who has lived in Hanoi with his family since 2012. With a background in sales, employment services, and building consultancy in Australia, Michael now serves as a key member of Capacity Vietnam, a social enterprise supporting mental health through Workplace Wellness, Life Skills, and English Club programs across Hanoi.",
+    detailedBio: "Michael brings over four decades of professional experience and a deep commitment to community development, including past work in poverty alleviation and education.",
+    expertise: ["Workplace Wellness", "Life Skills", "English Club programs", "Community development", "Poverty alleviation", "Education", "Organizational development", "Project management"],
+    qualifications: [
+      "Project Management",
+      "Facilitation & Training",
+      "Community Development",
+      "Organizational Development"
+    ],
+    experience: "Over four decades of professional experience",
+    workingHours: "Monday to Friday, 9:00 AM - 6:00 PM",
+    languages: ["English", "Vietnamese"],
+    programs: [
+      "Workplace Wellness Programs",
+      "Life Skills Development",
+      "English Club Programs",
+      "Community Outreach Initiatives"
+    ],
+    socialLinks: [
+      { icon: "fa fa-linkedin", url: "#" },
+      { icon: "fa fa-envelope", url: "mailto:michael@capacityvietnam.com" },
     ],
   },
 ];

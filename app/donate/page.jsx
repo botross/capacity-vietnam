@@ -83,16 +83,16 @@ export default function DonatePage() {
                   icon: "fa-users",
                   title: "Community Programs",
                   desc: "Educational workshops, support groups, and awareness campaigns that reduce stigma and promote mental health literacy in local communities.",
-                  stat: "50+",
+                  stat: "25+",
                   statLabel: "Communities Served",
                   color: "#2E5984"
                 },
                 {
                   icon: "fa-home",
-                  title: "Family Support",
-                  desc: "Comprehensive family therapy and counseling services that strengthen relationships and build supportive home environments for recovery.",
+                  title: "Individual Support",
+                  desc: "Comprehensive individual therapy and counseling services that strengthen relationships and build supportive home environments for recovery.",
                   stat: "500+",
-                  statLabel: "Families Helped",
+                  statLabel: "Individuals Helped",
                   color: "#4A6FA5"
                 },
                 {
@@ -224,18 +224,18 @@ export default function DonatePage() {
               {[
                 {
                   quote: "Thanks to the support from donors, I was able to access counseling when I needed it most. The sessions helped me overcome my anxiety and return to work with confidence.",
-                  name: "Anonymous Client",
-                  location: "Ho Chi Minh City"
-                },
-                {
-                  quote: "The family therapy program saved our marriage and helped us support our teenage son through his depression. We're grateful for the donors who made this possible.",
-                  name: "Family Participant",
+                  name: "Individual",
                   location: "Hanoi"
                 },
                 {
-                  quote: "The corporate wellness program funded by donations has created a more supportive workplace where employees feel comfortable discussing mental health.",
-                  name: "HR Manager",
-                  location: "Da Nang"
+                  quote: "The couple counseling program saved our marriage and helped us through a difficult time. We're grateful for the donors who made this possible.",
+                  name: "Couple Counseling",
+                  location: "Hanoi"
+                },
+                {
+                  quote: "The community program program funded by donations has created a more supportive community where participants feel comfortable learning about and discussing mental health.",
+                  name: "Program Participant",
+                  location: "Ho Chi Minh City"
                 }
               ].map((story, index) => (
                 <div key={index} className="col-lg-4 col-md-6" style={{ marginBottom: "30px" }}>

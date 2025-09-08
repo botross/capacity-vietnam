@@ -41,7 +41,7 @@ export default function VolunteerPage() {
                         fontWeight: "700", 
                         color: "var(--primary-color)",
                         marginBottom: "8px"
-                      }}>150+</div>
+                      }}>12+</div>
                       <div style={{ color: "var(--primary-color2)", fontSize: "0.9rem", fontWeight: "500" }}>
                         Active Volunteers
                       </div>

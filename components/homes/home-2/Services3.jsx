@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 import styles from './OurServices.module.css';
+import Link from 'next/link';
 
 const OurServices = () => {
   const [activeService, setActiveService] = useState(null);
@@ -24,7 +25,7 @@ const OurServices = () => {
     {
       id: 2,
       title: "Workplace & Community Training",
-      description: "Comprehensive mental health training and workshops designed to create supportive workplace and community environments.",
+      description: "Comprehensive mental health training and workshops designed to create supportive and psychologically safe workplaces and community environments.",
       fullDescription: "Comprehensive mental health training and workshops designed to create supportive workplace and community environments. Our programs provide practical tools and strategies for building mentally healthy communities.",
       icon: (
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,10 +127,11 @@ const OurServices = () => {
             <p className={styles.ctaDescription}>
               Take the first step towards better mental health and wellbeing
             </p>
-            <button className={styles.ctaButton}>
+            <Link href="/contact">  <button 
+            className={styles.ctaButton}>
               <span>Get Started Today</span>
               <div className={styles.buttonGlow}></div>
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

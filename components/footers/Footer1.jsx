@@ -382,7 +382,6 @@ export default function Footer1() {
       `}</style>
 
       <footer className="modern-footer">
-
         <div className="container">
           {/* Top Section */}
           <div className="footer-top">
@@ -406,22 +405,22 @@ export default function Footer1() {
               <div className="contact-item">
                 <div className="contact-icon">📍</div>
                 <div className="contact-content">
-                  <strong>Visit Our Center</strong><br />
-                  66 Broklyant Street, New York 3269
+                  <strong>Address</strong><br />
+                  N02-T3 Ngoai Giao Doan, Xuan Dinh Ward, Hanoi City
                 </div>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">📞</div>
                 <div className="contact-content">
-                  <strong>24/7 Helpline</strong><br />
-                  012 345 678 9101 • Emergency Support
+                  <strong>Phone</strong><br />
+                  036 655 7520
                 </div>
               </div>
               <div className="contact-item">
                 <div className="contact-icon">✉️</div>
                 <div className="contact-content">
-                  <strong>Get Support</strong><br />
-                  support@capacityvietnam.com
+                  <strong>Email</strong><br />
+                  info@capacityvietnam.com
                 </div>
               </div>
             </div>
@@ -430,7 +429,7 @@ export default function Footer1() {
           {/* Main Content */}
           <div className="footer-main">
             <div className="footer-section">
-              <h3>Our Mission</h3>
+              <h3>Our Commitment</h3>
               <p className="about-text">
                 At Capacity Vietnam, we believe everyone deserves access to quality mental health care.
                 Our dedicated team provides compassionate, evidence-based treatment to help you thrive.
@@ -438,9 +437,6 @@ export default function Footer1() {
               <div className="social-links">
                 <a href="#" className="social-link" title="Facebook">
                   <i className="fa fa-facebook"></i>
-                </a>
-                <a href="#" className="social-link" title="Twitter">
-                  <i className="fa fa-twitter"></i>
                 </a>
                 <a href="#" className="social-link" title="Instagram">
                   <i className="fa fa-instagram"></i>
@@ -454,7 +450,7 @@ export default function Footer1() {
             <div className="footer-section">
               <h3>Services</h3>
               <ul className="footer-links">
-                <li><Link href="/services">Individual Therapy</Link></li>
+                <li><Link href="/services">Individual Counseling</Link></li>
                 <li><Link href="/services">Group Counseling</Link></li>
                 <li><Link href="/services">Family Support</Link></li>
                 <li><Link href="/services">Crisis Intervention</Link></li>
@@ -468,7 +464,7 @@ export default function Footer1() {
                 <li><Link href="/blog">Mental Health Blog</Link></li>
                 <li><Link href="/resources">Self-Help Tools</Link></li>
                 <li><Link href="/support-groups">Support Groups</Link></li>
-                <li><Link href="/emergency">Emergency Resources</Link></li>
+                <li><Link href="/mental-health-resources">Mental Health Resources</Link></li>
                 <li><Link href="/about">About Our Team</Link></li>
               </ul>
             </div>
@@ -486,8 +482,6 @@ export default function Footer1() {
                   "❌ Something went wrong. Please try again."
                 )}
               </div>
-
-
             </div>
           </div>
 
@@ -506,6 +500,7 @@ export default function Footer1() {
           </div>
         </div>
       </footer>
+
     </>
   );
 }

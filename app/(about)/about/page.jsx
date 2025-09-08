@@ -19,7 +19,7 @@ export default function page() {
         <Header2 />
         <PageTitle
           pageName="About Capacity Vietnam"
-          pageDescription="Dedicated to transforming mental health care across Vietnam through compassionate, evidence-based treatment and unwavering support for every individual's journey to wellness."
+          pageDescription="Dedicated to transforming mental health care across Vietnam through compassionate, evidence-based treatment and community support for every individual's journey to wellness."
           overlayImage="/about-us.jpg"
           backgroundPosition="center 35%"
         />

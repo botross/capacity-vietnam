@@ -47,7 +47,7 @@ export default function About() {
                 <div className="box">
                   <div className="inner-about-count-box">
                     <span className="number-count number">
-                      <Counter max={20} />
+                      <Counter max={30} />
                     </span>
                     <div className="caption-number-count">
                       Years Supporting Mental Health
