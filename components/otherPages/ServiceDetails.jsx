@@ -127,9 +127,6 @@ export default function ServiceDetails() {
               {/* Service Description */}
               <div className="service-description-section mg-bottom-50">
                 <div className="description-container">
-                  <h3 className="section-heading-jost-size20 text-pri2-color mg-bottom-20">
-                    About This Service
-                  </h3>
                   <p className="section-desc enhanced-description">
                     {activeService.description}
                   </p>
