@@ -151,25 +151,6 @@ export default function ServiceDetails() {
                   ))}
                 </div>
               </div>
-
-              {/* Click to Contact Indicator */}
-              <div style={{
-                position: "absolute",
-                bottom: "20px",
-                right: "20px",
-                backgroundColor: "var(--primary-color)",
-                color: "white",
-                padding: "8px 16px",
-                borderRadius: "20px",
-                fontSize: "14px",
-                fontWeight: "600",
-                opacity: "0",
-                transition: "all 0.3s ease",
-                pointerEvents: "none"
-              }} className="click-indicator">
-                <i className="fa fa-arrow-right" style={{ marginRight: "8px" }}></i>
-                Click to Contact
-              </div>
             </article>
           </div>
           <div className="col-md-12">
