@@ -1,6 +1,15 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import Image from "next/image";
+import { servicesDetailsData } from "../../data/servicesDetails";
+
 export default function ServiceDetails() {
+  const [activeService, setActiveService] = useState(servicesDetailsData[0]);
+
+  const handleServiceClick = (service) => {
+    setActiveService(service);
+  };
+
   return (
     <section className="flat-service-details">
       <div className="container">
@@ -17,23 +26,26 @@ export default function ServiceDetails() {
             <div className="side-bar-services-details mg-bottom30">
               <div className="widget-nav-tab">
                 <ul className="tab-service link-style5">
-                  <li>
-                    <a className="active" href="#">
-                      Graphics Design
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">ui/ux brand design</a>
-                  </li>
-                  <li>
-                    <a href="#">web devolopment</a>
-                  </li>
-                  <li>
-                    <a href="#">branding design</a>
-                  </li>
-                  <li>
-                    <a href="#">ui/ux brand design</a>
-                  </li>
+                  {servicesDetailsData.map((service) => (
+                    <li 
+                    style={{ cursor: 'pointer' }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleServiceClick(service);
+                    }}
+                    key={service.id}>
+                      <a 
+                        className={activeService.id === service.id ? "active" : ""}
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleServiceClick(service);
+                        }}
+                      >
+                        {service.title}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -43,47 +55,22 @@ export default function ServiceDetails() {
                   Contact us
                 </h2>
               </div>
-              <ul className="widget-sidebar-contact-us text-pri2-color section-heading-rubik-size16">
+              <ul className="widget-sidebar-contact-us text-pri2-color">
                 <li>
-                  <span className="icon-author">Ceo:</span>
-                  <span className="info-contact-us">Linko Bunt</span>
+                  <span className="icon-telephone section-heading-jost-size20">Phone:</span>
+                  <span className="info-contact-us desc-box">036 655 7520</span>
                 </li>
                 <li>
-                  <span className="icon-telephone">Tel:</span>
-                  <span className="info-contact-us">012 345 678 9101</span>
+                  <span className="icon-location section-heading-jost-size20">Address:</span>
+                  <span className="info-contact-us desc-box">N02-T3 Ngoai Giao Doan, Xuan Dinh Ward, Hanoi City </span>
                 </li>
                 <li>
-                  <span className="icon-location">Location:</span>
-                  <span className="info-contact-us">US,street </span>
-                </li>
-                <li>
-                  <span className="icon-email">Email:</span>
-                  <span className="info-contact-us">yourmail@gmail.com</span>
+                  <span className="icon-email section-heading-jost-size20">Email:</span>
+                  <span className="info-contact-us desc-box">info@capacityvietnam.com</span>
                 </li>
               </ul>
             </div>
-            <div className="services-details-case-studio bd-radius-8">
-              <h3 className="subtitle-case-studio section-heading-rubik-size16">
-                CASE STUDIO
-              </h3>
-              <h2 className="title-case-studio section-heading-jost-size28 text-pri2-color">
-                2021 Brochure
-              </h2>
-              <p className="section-desc mg-bottom-43">
-                Lorem market standard dummy available market industry Lorem
-                simply dummy text of free available market
-              </p>
-              <span>
-                <a className="button-services btn-left" href="#">
-                  DOWNLOAD
-                </a>
-              </span>
-              <span>
-                <a className="button-services btn-right" href="#">
-                  DISCOVER
-                </a>
-              </span>
-            </div>
+
             <div
               className="themesflat-spacer clearfix"
               data-desktop={0}
@@ -92,95 +79,96 @@ export default function ServiceDetails() {
             />
           </div>
           <div className="col-md-8">
-            <article className="content-service-details">
-              <div className="post-service-details bd-radius-8-image mg-bottom-45">
-                <Image
-                  alt="imagess"
-                  src="/images/services/smiley-colleagues-having-meeting-office.jpg"
-                  width={770}
-                  height={500}
-                />
+            <article 
+              className="content-service-details clickable-service-box"
+            >
+              {/* Service Header */}
+              <div className="service-header mg-bottom-40">
+                <h2 className="section-heading-jost-size34 text-pri2-color mg-bottom-20">
+                  {activeService.title}
+                </h2>
+                <div className="service-header-accent"></div>
               </div>
-              <h2 className="section-heading-jost-size34 text-pri2-color mg-bottom30">
-                The gardening that matters.
-              </h2>
-              <p className="section-desc mg-bottom-20">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                sed diam voluptua. At vero eos et accusam et justo duo dolores
-                et ea
-              </p>
-              <p className="section-desc mg-bottom-40">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-              </p>
-              <div className="services-item d-flex mg-bottom30">
-                <div className="services-item-left mg-right-15">
-                  <div className="services-box d-flex wow fadeInLeft mg-bottom-45">
-                    <span className="icon-services icon-Group-660 bd-radius-8" />
-                    <div className="inner-box">
-                      <a href="#">
-                        <h3 className="section-heading-jost-size20 item-1">
-                          Design brand
-                        </h3>
-                      </a>
-                      <p className="section-desc">
-                        Lorem available market standard industry Lorem Ipsum
-                        dummy.
-                      </p>
+
+              {/* Dual Images Section */}
+              <div className="service-images-section mg-bottom-50">
+                <div className="images-grid">
+                  <div className="main-image-container">
+                    <div className="image-wrapper">
+                      <Image
+                        alt={`${activeService.title} - Main`}
+                        src={activeService.images.main}
+                        width={400}
+                        height={300}
+                        className="service-image main-image"
+                      />
+                      <div className="image-overlay">
+                        <span className="image-label">Primary Focus</span>
+                      </div>
                     </div>
                   </div>
-                  <div className="post-inner-box">
-                    <Image
-                      alt="images"
-                      src="/images/services/medium-shot-woman-holding-plant-pot.jpg"
-                      width={370}
-                      height={343}
-                    />
-                  </div>
-                </div>
-                <div className="services-item-right mg-left-15">
-                  <div className="services-box d-flex wow fadeInLeft mg-bottom-45">
-                    <span className="icon-services icon-tele-sale bd-radius-8" />
-                    <div className="inner-box">
-                      <a href="#">
-                        <h3 className="section-heading-jost-size20 item-1">
-                          Web develop
-                        </h3>
-                      </a>
-                      <p className="section-desc">
-                        Lorem available market standard industry Lorem Ipsum
-                        dummy.
-                      </p>
+                  <div className="secondary-image-container">
+                    <div className="image-wrapper">
+                      <Image
+                        alt={`${activeService.title} - Secondary`}
+                        src={activeService.images.secondary}
+                        width={300}
+                        height={300}
+                        className="service-image secondary-image"
+                      />
+                      <div className="image-overlay">
+                        <span className="image-label">Supporting Approach</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="post-inner-box">
-                    <Image
-                      alt="images"
-                      src="/images/services/box-flowers-green-garden.jpg"
-                      width={370}
-                      height={343}
-                    />
                   </div>
                 </div>
               </div>
-              <div className="create-by-author center bd-radius-8">
-                <h3 className="name-author section-heading-rubik-size20 mg-bottom-20">
-                  D. JHON SHIKON MILON
+
+              {/* Service Description */}
+              <div className="service-description-section mg-bottom-50">
+                <div className="description-container">
+                  <h3 className="section-heading-jost-size20 text-pri2-color mg-bottom-20">
+                    About This Service
+                  </h3>
+                  <p className="section-desc enhanced-description">
+                    {activeService.description}
+                  </p>
+                </div>
+              </div>
+              
+              {/* Specializations Box */}
+              <div className="service-specializations mg-bottom-40">
+                <h3 className="section-heading-jost-size20 text-pri2-color mg-bottom-20">
+                  Specializations
                 </h3>
-                <h4 className="content-author">
-                  Lorem Ipsum simply dummy text free available market the
-                  typesetting industry.available standard text available market
-                  industry
-                </h4>
+                <div className="specializations-grid">
+                  {activeService.specializations.map((specialization, index) => (
+                    <div key={index} className="specialization-item">
+                      <span className="specialization-badge">
+                        {specialization}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Click to Contact Indicator */}
+              <div style={{
+                position: "absolute",
+                bottom: "20px",
+                right: "20px",
+                backgroundColor: "var(--primary-color)",
+                color: "white",
+                padding: "8px 16px",
+                borderRadius: "20px",
+                fontSize: "14px",
+                fontWeight: "600",
+                opacity: "0",
+                transition: "all 0.3s ease",
+                pointerEvents: "none"
+              }} className="click-indicator">
+                <i className="fa fa-arrow-right" style={{ marginRight: "8px" }}></i>
+                Click to Contact
               </div>
             </article>
           </div>

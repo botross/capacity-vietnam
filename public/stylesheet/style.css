@@ -554,7 +554,6 @@ h6 {
   border-radius: 50%;
 }
 
-
 .mg-left-15 {
   margin-left: 15px;
 }
@@ -847,12 +846,12 @@ a:focus {
 ---------------------------------------------------------------*/
 :root {
   /* color */
-  --primary-color: #2d5175 !important; 
+  --primary-color: #2d5175 !important;
   --primary-color2: #68b0aa !important;
-  --primary-color3: #e8f4f8 !important; 
+  --primary-color3: #e8f4f8 !important;
   --primary-color4: #5a8b89 !important; /* Secondary Brand Color - Teal */
-  --primary-color5: #2d5175 !important; 
-  --accent-color: #d4a574 !important; 
+  --primary-color5: #2d5175 !important;
+  --accent-color: #d4a574 !important;
 }
 
 /* button */
@@ -3216,4 +3215,109 @@ article.post .content-post .more-link a:hover {
   font-weight: normal;
   font-style: normal;
   font-display: block;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #2d5175 0%, #1a3a52 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 2.8rem;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.cta-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 16px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: #68b0aa;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #5a9b96;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(104, 176, 170, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #2d5175;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .mission-grid,
+  .stats-grid,
+  .values-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-grid {
+    gap: 40px;
+  }
+
+  .section-title,
+  .cta-title {
+    font-size: 2.2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
 }

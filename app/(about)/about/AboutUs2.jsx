@@ -6,6 +6,7 @@ import Header2 from "@/components/headers/Header2";
 import PageTitle from "@/components/common/Pagetitle";
 import Team from "@/components/otherPages/Team";
 import Facts from "@/components/homes/home-2/Facts";
+import CTA from "./CTA";
 export default function AboutUsPage() {
 
 
@@ -525,112 +526,6 @@ export default function AboutUsPage() {
           line-height: 1.6;
           font-size: 14px;
         }
-
-        /* CTA Section */
-        .cta-section {
-          background: linear-gradient(135deg, #2d5175 0%, #1a3a52 100%);
-          color: white;
-          padding: 100px 0;
-          text-align: center;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .cta-content {
-          position: relative;
-          z-index: 2;
-          max-width: 700px;
-          margin: 0 auto;
-        }
-
-        .cta-title {
-          font-size: 2.8rem;
-          margin-bottom: 24px;
-          line-height: 1.2;
-        }
-
-        .cta-description {
-          font-size: 18px;
-          margin-bottom: 40px;
-          color: rgba(255, 255, 255, 0.9);
-          line-height: 1.6;
-        }
-
-        .cta-buttons {
-          display: flex;
-          gap: 20px;
-          justify-content: center;
-          flex-wrap: wrap;
-        }
-
-        .btn {
-          padding: 16px 32px;
-          border-radius: 12px;
-          text-decoration: none;
-          font-weight: 600;
-          font-size: 16px;
-          transition: all 0.3s ease;
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          border: 2px solid transparent;
-        }
-
-        .btn-primary {
-          background: #68b0aa;
-          color: white;
-        }
-
-        .btn-primary:hover {
-          background: #5a9b96;
-          transform: translateY(-2px);
-          box-shadow: 0 10px 30px rgba(104, 176, 170, 0.4);
-        }
-
-        .btn-outline {
-          background: transparent;
-          color: white;
-          border-color: rgba(255, 255, 255, 0.3);
-        }
-
-        .btn-outline:hover {
-          background: white;
-          color: #2d5175;
-          transform: translateY(-2px);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-          .hero-title {
-            font-size: 2.5rem;
-          }
-
-          .mission-grid,
-          .stats-grid,
-          .values-grid,
-          .team-grid {
-            grid-template-columns: 1fr;
-          }
-
-          .mission-grid {
-            gap: 40px;
-          }
-
-          .section-title,
-          .cta-title {
-            font-size: 2.2rem;
-          }
-
-          .cta-buttons {
-            flex-direction: column;
-            align-items: center;
-          }
-
-          .btn {
-            width: 100%;
-            max-width: 300px;
-          }
-        }
       `}</style>
 
 
@@ -639,10 +534,10 @@ export default function AboutUsPage() {
 
 
         <section
-        style={{
-          backgroundColor: "#F0FBFF"
-        }}
-        className="values-section">
+          style={{
+            backgroundColor: "#F0FBFF"
+          }}
+          className="values-section">
           <div className="container">
             <div className="section-header">
               <div className="section-badge">
@@ -712,37 +607,7 @@ export default function AboutUsPage() {
 
         <Facts />
 
-        <section className="cta-section">
-          <div className="container">
-            <div className="cta-content">
-              <h2 className="cta-title">Ready to Begin Your Journey?</h2>
-              <p className="cta-description">
-                Take the first step towards better mental health. Our compassionate team is here
-                to support you every step of the way with personalized care and evidence-based treatments.
-              </p>
-              <div className="cta-buttons">
-              <Link href="/contact" style={{
-                      position: 'relative',
-                      background: 'rgba(255, 255, 255, 0.15)',
-                      backdropFilter: 'blur(20px)',
-                      border: '2px solid rgba(255, 255, 255, 0.3)',
-                      color: 'white',
-                      padding: '16px 32px',
-                      borderRadius: '50px',
-                      fontWeight: '600',
-                      fontSize: '1rem',
-                      cursor: 'pointer',
-                      transition: 'all 0.3s ease',
-                      overflow: 'hidden',
-                      textDecoration: 'none',
-                      display: 'inline-block'
-                    }}>
-                      Contact Us
-                    </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CTA />
         <Team />
 
         {/* CTA Section */}

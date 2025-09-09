@@ -23,7 +23,7 @@ export const menuItems = [
     href: "/services",
 
     subMenu: [
-      { title: "Counselling", href: "/services" },
+      { title: "Counselling", href: "/counselling" },
       { title: "Training", href: "/service-details" },
     ],
   },
