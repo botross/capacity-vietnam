@@ -103,7 +103,7 @@ export default function ServiceDetails() {
                         className="service-image main-image"
                       />
                       <div className="image-overlay">
-                        <span className="image-label">Primary Focus</span>
+                        <span className="image-label">{activeService.title}</span>
                       </div>
                     </div>
                   </div>
@@ -117,7 +117,7 @@ export default function ServiceDetails() {
                         className="service-image secondary-image"
                       />
                       <div className="image-overlay">
-                        <span className="image-label">Supporting Approach</span>
+                        <span className="image-label">{activeService.title}</span>
                       </div>
                     </div>
                   </div>
