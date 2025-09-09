@@ -20,11 +20,11 @@ export const menuItems = [
   },
   {
     title: "Services",
-    href: "/services",
+    href: "/counselling",
 
     subMenu: [
       { title: "Counselling", href: "/counselling" },
-      { title: "Training", href: "/service-details" },
+      { title: "Training", href: "/training" },
     ],
   },
   // {
