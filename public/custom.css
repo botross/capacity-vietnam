@@ -489,14 +489,16 @@
 /* Service Header Styling */
 .service-header {
   position: relative;
-  text-align: center;
   margin-bottom: 50px;
+  flex-direction: column;
 }
 
 .service-header h2 {
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
+  text-align: center;
+  place-self: center;
 }
 
 .service-header-accent {

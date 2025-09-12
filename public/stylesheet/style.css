@@ -931,6 +931,7 @@ a:focus {
   letter-spacing: -1px;
   line-height: 58px;
   color: var(--primary-color5);
+  place-self: center;
 }
 
 .section-heading-rubik-size12 {
@@ -3309,6 +3310,7 @@ article.post .content-post .more-link a:hover {
   .section-title,
   .cta-title {
     font-size: 2.2rem;
+    text-align: center;
   }
 
   .cta-buttons {
