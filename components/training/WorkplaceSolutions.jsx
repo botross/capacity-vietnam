@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function WorkplaceSolutions() {
+
     const solutions = [
         {
             id: 1,
@@ -97,6 +98,7 @@ export default function WorkplaceSolutions() {
             image: "/images/training/mental-health-experts.jpg"
         }
     ];
+
 
     return (
         <section className="workplace-solutions" id="workplace-solutions">
