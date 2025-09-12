@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ExpertTeam() {
     const experts = [
@@ -20,7 +21,7 @@ export default function ExpertTeam() {
                 "Cross-cultural Mental Health",
                 "Leadership Development"
             ],
-            image: "/images/team/team-1.jpg",
+            image: "/images/team/staff1.jpg",
             color: "var(--primary-color4)"
         },
         {
@@ -39,7 +40,7 @@ export default function ExpertTeam() {
                 "Bilingual Support",
                 "Cultural Competency Training"
             ],
-            image: "/images/team/team-2.jpg",
+            image: "/images/team/staff3.jpg",
             color: "var(--primary-color2)"
         },
         {
@@ -58,7 +59,7 @@ export default function ExpertTeam() {
                 "Workplace Mental Health",
                 "Team Building & Healing"
             ],
-            image: "/images/team/team-3.jpg",
+            image: "/images/team/staff3.jpg",
             color: "var(--primary-color3)"
         }
     ];
@@ -95,7 +96,14 @@ export default function ExpertTeam() {
                         <i className="fa fa-users"></i>
                         <span>Your Mental Health Experts</span>
                     </div>
-                    <h2 className="section-title">
+                    <h2
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            justifyContent: "center"
+                        }}
+                        className="section-title">
                         Combined 35+ Years Experience
                         <span className="title-accent">Proven International + Local Expertise</span>
                     </h2>
@@ -133,15 +141,14 @@ export default function ExpertTeam() {
                                         src={expert.image}
                                         width={300}
                                         height={300}
+                                        style={{
+                                            borderRadius: "10px",
+                                            objectFit: "cover",
+                                            objectPosition: "45% 5%",
+                                            backgroundColor:"#fff"
+                                        }}
                                         className="expert-photo"
                                     />
-                                    <div className="image-overlay" style={{ background: `linear-gradient(135deg, ${expert.color}20, transparent)` }}>
-                                        <div className="overlay-content">
-                                            <div className="expert-badge" style={{ backgroundColor: expert.color }}>
-                                                <i className="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
 
@@ -155,13 +162,25 @@ export default function ExpertTeam() {
 
                                 {/* Qualifications */}
                                 <div className="qualifications-section">
-                                    <h5 className="section-title">
+                                    <h5
+                                        style={{
+                                            fontSize: "16px",
+                                            marginBottom: "-10px",
+                                            marginTop: "-20px"
+
+                                        }}
+                                        className="section-title">
                                         <i className="fa fa-graduation-cap"></i>
                                         Qualifications
                                     </h5>
                                     <ul className="qualifications-list">
                                         {expert.qualifications.map((qual, idx) => (
-                                            <li key={idx}>
+                                            <li
+                                                style={{
+                                                    fontSize: "14px",
+                                                    marginBottom: "-10px"
+                                                }}
+                                                key={idx}>
                                                 <i className="fa fa-check-circle" style={{ color: expert.color }}></i>
                                                 <span>{qual}</span>
                                             </li>
@@ -171,7 +190,12 @@ export default function ExpertTeam() {
 
                                 {/* Specialties */}
                                 <div className="specialties-section">
-                                    <h5 className="section-title">
+                                    <h5
+                                        style={{
+                                            fontSize: "16px",
+                                            marginBottom: "-5px"
+                                        }}
+                                        className="section-title">
                                         <i className="fa fa-star"></i>
                                         Specialties
                                     </h5>
@@ -184,13 +208,6 @@ export default function ExpertTeam() {
                                     </div>
                                 </div>
 
-                                {/* Contact Button */}
-                                <div className="expert-cta">
-                                    <a href="/contact" className="expert-contact-btn" style={{ borderColor: expert.color, color: expert.color }}>
-                                        <i className="fa fa-envelope"></i>
-                                        Contact {expert.name.split(' ')[0]}
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     ))}
@@ -205,9 +222,9 @@ export default function ExpertTeam() {
                         <div className="philosophy-text">
                             <h3>Our Approach</h3>
                             <p>
-                                We combine international best practices with deep local understanding to provide culturally sensitive, 
-                                evidence-based mental health support. Our team's diverse backgrounds and extensive experience ensure 
-                                that every client receives personalized, professional care that respects their cultural context while 
+                                We combine international best practices with deep local understanding to provide culturally sensitive,
+                                evidence-based mental health support. Our team's diverse backgrounds and extensive experience ensure
+                                that every client receives personalized, professional care that respects their cultural context while
                                 delivering world-class therapeutic outcomes.
                             </p>
                         </div>
@@ -220,13 +237,13 @@ export default function ExpertTeam() {
                         <h3>Ready to Work with Our Experts?</h3>
                         <p>Schedule a consultation with our experienced team to discuss your organization's mental health needs.</p>
                         <div className="cta-buttons">
-                            <a href="/contact" className="btn-primary-large">
-                                <i className="fa fa-calendar"></i>
+                            <a className="btn-primary-large">
+                            <Link href="/contact">
+                                <i className="fa fa-calendar">
+
+                                </i>
                                 Schedule Consultation
-                            </a>
-                            <a href="#workplace-solutions" className="btn-secondary-large">
-                                <i className="fa fa-arrow-up"></i>
-                                View Our Solutions
+                            </Link>
                             </a>
                         </div>
                     </div>

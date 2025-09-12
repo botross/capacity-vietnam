@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WorkplaceSolutions() {
     const solutions = [
@@ -9,7 +10,7 @@ export default function WorkplaceSolutions() {
             title: "Workplace Wellbeing Training for Managers",
             subtitle: "Workplace Wellbeing Courses & Workshops",
             icon: "fa-user-tie",
-            color: "var(--primary-color4)",
+            color: "#fff",
             description: "Empower your leaders with comprehensive mental health training to create psychologically safe workplaces and support their teams effectively.",
             features: [
                 "4 modules in 1 intensive day (8 hours)",
@@ -32,7 +33,7 @@ export default function WorkplaceSolutions() {
             title: "Workplace Wellbeing Training for Employees",
             subtitle: "Workplace Wellbeing Courses & Workshops",
             icon: "fa-users",
-            color: "var(--primary-color2)",
+            color: "#fff",
             description: "Comprehensive employee wellness program designed to build resilience, manage stress, and create a mentally healthy workplace culture.",
             features: [
                 "6 modules over 2 days (12 hours total)",
@@ -55,7 +56,7 @@ export default function WorkplaceSolutions() {
             title: "Psychological Support Services",
             subtitle: "Individual & Group Counselling",
             icon: "fa-heart",
-            color: "var(--primary-color3)",
+            color: "#fff",
             description: "Professional psychological support services including individual counselling, group support, and workplace conflict resolution.",
             features: [
                 "Individual Counselling (Online, on-site, or hybrid)",
@@ -72,6 +73,28 @@ export default function WorkplaceSolutions() {
                 "Conflict resolution"
             ],
             image: "/images/training/community-education-1.jpg"
+        },
+        {
+            id: 4,
+            title: "Your Mental Health Experts",
+            subtitle: "35+ Years Combined Experience",
+            icon: "fa-user-md",
+            color: "#fff",
+            description: "Our experienced team of international and local mental health professionals deliver trusted workplace wellbeing programs and support services.",
+            features: [
+                "35+ years of combined experience",
+                "Proven international + local expertise",
+                "Licensed counsellors and trainers",
+                "Cross-cultural competency specialists",
+                "Bilingual Vietnamese/English delivery"
+            ],
+            topics: [
+                "Leadership in mental health training",
+                "Cross-cultural counselling",
+                "Employee Assistance Programs (EAP)",
+                "Workplace wellbeing strategies"
+            ],
+            image: "/images/training/mental-health-experts.jpg"
         }
     ];
 
@@ -86,7 +109,7 @@ export default function WorkplaceSolutions() {
                     </div>
                     <h2 className="section-title">
                         Comprehensive Mental Health
-                        <span className="title-accent">Solutions</span>
+                        <span className="title-accent">{" "}Solutions</span>
                     </h2>
                     <p className="section-description">
                         Transform your workplace with our evidence-based mental health programs designed for managers, employees, and organizations.
@@ -97,27 +120,27 @@ export default function WorkplaceSolutions() {
                 <div className="solutions-grid">
                     {solutions.map((solution, index) => (
                         <div key={solution.id} className={`solution-card solution-${index + 1}`}>
-                            {/* Card Header */}
-                            <div className="card-header">
-                                <div className="card-icon" style={{ backgroundColor: solution.color }}>
-                                    <i className={`fa ${solution.icon}`}></i>
-                                </div>
+                            <div className="card-content">
                                 <div className="card-badge">
                                     <span>{solution.subtitle}</span>
                                 </div>
-                            </div>
-
-                            {/* Card Content */}
-                            <div className="card-content">
                                 <h3 className="card-title">{solution.title}</h3>
-                                <p className="card-description">{solution.description}</p>
+                                <p
+                                    style={{
+                                        marginBottom: "20px"
+                                    }}
+                                    className="card-description">{solution.description}</p>
 
                                 {/* Features List */}
                                 <div className="features-section">
                                     <h4 className="features-title">Key Features:</h4>
                                     <ul className="features-list">
                                         {solution.features.map((feature, idx) => (
-                                            <li key={idx} className="feature-item">
+                                            <li
+                                                style={{
+                                                    marginBottom: "-5px"
+                                                }}
+                                                key={idx} className="feature-item">
                                                 <i className="fa fa-check-circle" style={{ color: solution.color }}></i>
                                                 <span>{feature}</span>
                                             </li>
@@ -138,58 +161,28 @@ export default function WorkplaceSolutions() {
                                 </div>
                             </div>
 
-                            {/* Card Image */}
-                            <div className="card-image">
-                                <div className="image-wrapper">
-                                    <Image
-                                        alt={solution.title}
-                                        src={solution.image}
-                                        width={400}
-                                        height={300}
-                                        className="solution-image"
-                                    />
-                                    <div className="image-overlay" style={{ background: `linear-gradient(135deg, ${solution.color}20, transparent)` }}>
-                                        <div className="overlay-content">
-                                            <div className="overlay-icon" style={{ backgroundColor: solution.color }}>
-                                                <i className={`fa ${solution.icon}`}></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
 
                             {/* Card Footer */}
                             <div className="card-footer">
-                                <div className="success-metric">
-                                    <div className="metric-number" style={{ color: solution.color }}>85%+</div>
-                                    <div className="metric-text">Report Increased Confidence</div>
-                                </div>
-                                <a href="/contact" className="learn-more-btn" style={{ borderColor: solution.color, color: solution.color }}>
-                                    Learn More
-                                    <i className="fa fa-arrow-right"></i>
+                                <a 
+                                className="learn-more-btn" >
+                                    <Link
+                                    style={{
+                                        color: solution.color,
+                                
+                                    }}
+                                    href={`/training/${solution.id}`}>
+                                        Learn More
+                                        <i className="fa fa-arrow-right"></i>
+                                    </Link>
                                 </a>
                             </div>
                         </div>
                     ))}
                 </div>
 
-                {/* Bottom CTA */}
-                <div className="solutions-cta">
-                    <div className="cta-content">
-                        <h3>Ready to Transform Your Workplace?</h3>
-                        <p>Join hundreds of organizations that have improved their workplace culture with our comprehensive mental health solutions.</p>
-                        <div className="cta-buttons">
-                            <a href="/contact" className="btn-primary-large">
-                                <i className="fa fa-calendar"></i>
-                                Schedule Consultation
-                            </a>
-                            <a href="#expert-team" className="btn-secondary-large">
-                                <i className="fa fa-users"></i>
-                                Meet Our Experts
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
     );

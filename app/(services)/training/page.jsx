@@ -18,11 +18,16 @@ export default function page() {
         <Header2 />
         <TrainingHero />
         <WorkplaceSolutions />
-        <ManagerTraining />
-        <EmployeeTraining />
-        <PsychologicalSupport />
-        <ExpertTeam />
         <CTA />
+        {/* <ManagerTraining /> */}
+        {/* <EmployeeTraining /> */}
+        {/* <PsychologicalSupport /> */}
+        <ExpertTeam />
+        <div 
+        style={{
+          marginBottom:"-100px"
+        }}
+        />
         <Footer1 />
       </div>
     </>

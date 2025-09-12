@@ -143,13 +143,7 @@ export default function TrainingHero() {
                 </div>
             </div>
 
-            {/* Scroll Indicator */}
-            <div className="scroll-indicator">
-                <div className="scroll-arrow">
-                    <i className="fa fa-chevron-down"></i>
-                </div>
-                <span>Discover Our Solutions</span>
-            </div>
+
         </section>
     );
 }
